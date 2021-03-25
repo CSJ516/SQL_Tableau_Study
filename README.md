@@ -1,4 +1,4 @@
-# SQL Tableau study
+# SQL Tableau study 📖
 
 본 스터디에서는 '데이터 분석과 시각화 : SQL로 분석하고 Tableau로 시각화하자' 교재를 기반으로 SQL과 Tableau의 기초를 다지는 것을 목적으로 하고 있습니다.
 
