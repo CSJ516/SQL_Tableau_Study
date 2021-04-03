@@ -1,0 +1,25 @@
+[CHAPTER 04 실무에 필요한 SQL]
+
+4-1. 연산자
+
+(1) 연산자는 WHERE절에 주로 사용되며, 종류는 비교/논리/특수/산술
+(2) 비교 연산자 : =, >, <, >=, <=, <>
+(3) 논리 연산자 : AND, OR, NOT
+(4) 특수 연산자 : (NOT) BETWEEN a AND b, (NOT) IN, (NOT) LIKE, IS (NOT) NULL
+** 비교문자열 형태 예시 : LIKE '%포함하고 싶은 문자열%'
+(5) 산술 연산자 : +, -, *, /
+
+4-2. 단일 행 함수
+
+(1) 단일 행 함수는 숫자/문자/날짜/형 변환/일반으로 총 5가지 종류
+(2) 숫자 : ABS, ROUND, CEILING(크거나 같은 최소 정수), FLOOR(작거나 같은 최소 정수),
+             POWER(거듭 제곱), SQRT
+(3) 문자 : LOWER, UPPER, LEFT, RIGHT, LEN, REPLACE, CONCAT, LTRIM(왼쪽 공백 제외 문자 반환),
+             RTRIM, TRIM, SUBSTRING, CHARINDEX, SPACE(n만큼 공백 추가), STUFF
+** REPLACE('문자열', a, b) : 문자열 중 a가 있으면 b로 반환
+** SUBSTRING('문자열', a, b) : 문자열의 a 위치에서 b개 길이만큼 반환
+** CHARINDEX(a, '문자열', n) : 문자열 중 a가 있으면 위치 반환(없으면 0, n으로 시작 위치 지정)
+** STUFF('문자열', m, n, a) : 문자열의 m 위치에서 n개 길이만큼 삭제 후 a로 반환
+(4) 날짜 : GETDATE, YEAR, MONTH, DAY, DATEPART(기준, '날짜열'), DATEADD(기준, n, '날짜열'),
+             DATEDIFF(기준, '날짜열a', '날짜열b')
+(5) 형 변환 : CONVERT, CAST
