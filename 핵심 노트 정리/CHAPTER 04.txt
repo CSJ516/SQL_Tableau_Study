@@ -16,6 +16,7 @@
              POWER(거듭 제곱), SQRT
 (3) 문자 : LOWER, UPPER, LEFT, RIGHT, LEN, REPLACE, CONCAT, LTRIM(왼쪽 공백 제외 문자 반환),
              RTRIM, TRIM, SUBSTRING, CHARINDEX, SPACE(n만큼 공백 추가), STUFF
+** LEN의 경우 오른 쪽에 위치한 공백은 제외하고 글자 수 반환
 ** REPLACE('문자열', a, b) : 문자열 중 a가 있으면 b로 반환
 ** SUBSTRING('문자열', a, b) : 문자열의 a 위치에서 b개 길이만큼 반환
 ** CHARINDEX(a, '문자열', n) : 문자열 중 a가 있으면 위치 반환(없으면 0, n으로 시작 위치 지정)
@@ -23,3 +24,8 @@
 (4) 날짜 : GETDATE, YEAR, MONTH, DAY, DATEPART(기준, '날짜열'), DATEADD(기준, n, '날짜열'),
              DATEDIFF(기준, '날짜열a', '날짜열b')
 (5) 형 변환 : CONVERT, CAST
+** CONVERT(VARCHAR, '날짜열', 기준) : 지정 기준으로 날짜를 문자열 형식으로 변환 (기준 : 21, 23, 111, 112, 120)
+** CAST(특정 열 AS 기준) : 지정 기준으로 특정 열 형식 변환
+(6) 일반 : ISNULL, NULLIF, CASE ~ WHEN THEN ~ END
+** ISNULL(특정 열, 지정 값) : 특정 열이 NULL일 경우 지정 값 변환
+** NULLIF(특정 열a, 특정 열b) : 특정 열 a,b가 같은 경우 NULL, 다를 경우 특정 열a 변환
