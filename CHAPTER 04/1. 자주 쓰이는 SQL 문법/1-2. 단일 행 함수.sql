@@ -1,0 +1,162 @@
+
+/* 날짜형 함수 */
+
+--GETDATE(): 현재 날짜와 시간 반환
+SELECT  GETDATE()
+
+--YEAR/MONTH/DAY: YEAR, MONTH, DAY 데이터 반환 
+SELECT  YEAR('2020-12-31') --2020년
+SELECT  MONTH('2020-12-31') --12월
+SELECT  DAY('2020-12-31') --31일
+
+--DATEPART: 지정 기준(YEAR, MONTH, DAY + HH, MI, SS, DW)으로 데이터 반환
+SELECT  DATEPART(YEAR,'2020-12-31 10:20:30') --2020년
+SELECT  DATEPART(MONTH,'2020-12-31 10:20:30') --12월
+SELECT  DATEPART(DAY,'2020-12-31 10:20:30') --31일
+SELECT  DATEPART(HH,'2020-12-31 10:20:30') --10시간
+SELECT  DATEPART(MI,'2020-12-31 10:20:30') --20분
+SELECT  DATEPART(SS,'2020-12-31 10:20:30') --30초 
+SELECT  DATEPART(DW,'2020-12-31 10:20:30') --5 -> 목요일 (* 1~7 -> 일~토)
+
+--DATEADD: 지정한 기준(YEAR, MONTH, DAY + HH, MI, SS)에서 +-숫자 만큼 더한 데이터 반환
+SELECT  DATEADD(YEAR, -1, '2020-12-31')  
+SELECT  DATEADD(MONTH, -1, '2020-12-31')
+SELECT  DATEADD(DAY, -1, '2020-12-31')
+SELECT  DATEADD(HH, -1, '2020-12-31')
+SELECT  DATEADD(MI, -1, '2020-12-31')
+SELECT  DATEADD(SS, -1, '2020-12-31')
+
+--DATEDIFF: 지정한 기준(YEAR, MONTH, DAY + HH, MI, SS)으로 두 날짜열 차이 데이터 반환
+SELECT  DATEDIFF(YEAR, '2020-12-31', '2021-12-31')
+SELECT  DATEDIFF(MONTH, '2020-12-31', '2021-12-31')
+SELECT  DATEDIFF(DAY, '2020-12-31', '2021-12-31')
+SELECT  DATEDIFF(HH, '2020-12-31', '2021-12-31')
+SELECT  DATEDIFF(MI, '2020-12-31', '2021-12-31')
+SELECT  DATEDIFF(SS, '2020-12-31', '2021-12-31')
+
+
+/* 문자형 함수 */
+
+--LOWER: 소문자 반환
+SELECT  LOWER('ABCD')
+
+--UPPER: 대문자 반환
+SELECT  UPPER('abcd')
+
+--LEFT: 왼쪽부터 지정한 수 만큼 문자 반환
+SELECT  LEFT('ABCD', 2)
+
+--RIGHT: 오른쪽부터 지정한 수 만큼 문자 반환
+SELECT  RIGHT('ABCD', 2)
+
+--LEN: 문자수 반환(오른쪽 공백제외)
+SELECT  LEN('ABCD')
+SELECT  LEN('ABCD ')
+SELECT  LEN(' ABCD')
+
+--REPLACE: 문자열 중, 지정 문자 변환
+SELECT  REPLACE('ABCD', 'A', 'a')
+
+--CONCAT: 둘 이상의 문자열 연결
+SELECT  CONCAT('AB', 'C', 'D')
+
+--LTRIM: 왼쪽 공백 제외 문자 반환
+SELECT  LTRIM('  ABCD')
+
+--RTRIM: 오른쪽 공백 제외 문자 반환
+SELECT  RTRIM('ABCD  ')
+
+--TRIM: 양쪽 공백 제외 문자 반환
+SELECT  TRIM('  ABCD  ')
+
+--SUBSTRING: 문자열의 지정 위치 및 길이 만큼 문자 반환
+SELECT  SUBSTRING('ABCD', 2, 2)
+
+--CHARINDEX: 문자열 중, 지정 문자 위치 반환(지정 문자가 없으면, 0 반환)
+SELECT  CHARINDEX('B','ABCD')
+SELECT  CHARINDEX('B','ABCD', 3) -- ABCD에서 3부터 검색시작 
+
+--SPACE: 공백 추가
+SELECT  'A'+SPACE(5)+'B'
+
+--STUFF: 
+SELECT  STUFF('ABCD', 2, 2, 'xx')
+
+
+/* 숫자형 함수 */
+
+--ABS: 소문자 반환
+SELECT  ABS(-123)
+
+--ROUND: 반올림
+SELECT  ROUND(1.56, 1)
+
+--CEILING: 크거나 같은 최소 정수
+SELECT  CEILING(1.56)
+
+--FLOOR: 작거나 같은 최소 정수
+SELECT  FLOOR(1.56)
+
+--POWER: 제곱근
+SELECT  POWER(3,2)
+
+--POWER: 제곱근
+SELECT  SQRT(9)
+
+
+/* 형 변환 함수 */
+
+--CONVERT(VARCHAR, ‘날짜열’, 기준): 지정 기준으로 날짜 -> 문자 데이터 형식 변환
+SELECT  CONVERT(VARCHAR, GETDATE(), 1)
+SELECT  CONVERT(VARCHAR, GETDATE(), 5)
+SELECT  CONVERT(VARCHAR, GETDATE(), 8)
+
+SELECT  CONVERT(VARCHAR, GETDATE(), 21)
+SELECT  CONVERT(VARCHAR, GETDATE(), 23)
+
+SELECT  CONVERT(VARCHAR, GETDATE(), 111)
+SELECT  CONVERT(VARCHAR, GETDATE(), 112)
+SELECT  CONVERT(VARCHAR, GETDATE(), 120)
+
+--CONVERT(VARCHAR(n), ‘날짜열’, 기준): 지정 기준으로 날짜 -> 문자 데이터 형식 변환 + n 숫자 만큼
+SELECT  CONVERT(VARCHAR(8), GETDATE(), 112)
+SELECT  CONVERT(VARCHAR(6), GETDATE(), 112)
+SELECT  CONVERT(VARCHAR(4), GETDATE(), 112)
+
+--CAST(문자 or 숫자열 AS 기준): 지정 기준으로 문자 or 숫자열 데이터 형식 변환
+SELECT  CAST('100' AS INT) + CAST('100' AS INT)
+SELECT  CAST(100 AS VARCHAR) + CAST(100 AS VARCHAR)
+
+SELECT  CAST(1.56 AS INT)
+SELECT  CAST(1.56 AS NUMERIC)
+
+SELECT  CAST(GETDATE() AS DATE)
+SELECT  CAST(GETDATE() AS DATETIME)
+
+
+/* 일반 함수 */
+
+--ISNULL: 특정 열이 NULL일 경우, 지정 값 변환
+SELECT  ISNULL(NULL, 0)
+
+--NULLIF: 두 개의 특정 열이 같은 경우 NULL / 다를 경우 왼쪽 열 변환
+SELECT  NULLIF(1, 1)
+SELECT  NULLIF(1, 2)
+
+USE EDU
+
+--CASE WHEN: 여러 조건별로 지정 값 변환
+--조건 외 값은 NULL 반환
+SELECT  *
+		,CASE WHEN ageband BETWEEN 20 AND 30 THEN '2030세대'
+		      WHEN ageband BETWEEN 40 AND 50 THEN '4050세대'
+			  END AS ageband_seg
+  FROM  [Member]
+
+--CASE WHEN(+ELSE): 여러 조건별로 지정 값 변환(+ELSE)
+--조건 외 값을 ELSE로 지정
+SELECT  *
+		,CASE WHEN ageband BETWEEN 20 AND 30 THEN '2030세대'
+		      WHEN ageband BETWEEN 40 AND 50 THEN '4050세대'
+			  ELSE 'OTHER세대' END AS ageband_seg
+  FROM  [Member]
