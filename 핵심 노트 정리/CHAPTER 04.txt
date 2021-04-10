@@ -62,3 +62,33 @@
 (3) UNION ALL : 합집합. 중복된 행을 그대로 반환
 (4) INTERSECT : 교집합. 중복된 행은 하나의 행으로 반환
 (5) EXCEPT : 차집합. 중복된 행은 하나의 행으로 반환
+
+4-6. VIEW
+
+(1) VIEW : 가상 테이블 또는 저장된 SQL 명령어
+(2) 생성 : CREATE VIEW [VIEW명] AS SELECT ~
+** 데이터베이스의 뷰 폴더에서 확인 가능
+** 테이블 JOIN 시 중복되는 열 이름을 조회하는 명령어(ex) 모든 열(*))는 X
+(3) 수정 : ALTER VIEW [VIEW명] AS SELECT ~
+(4) 삭제 : DROP VIEW [VIEW명]
+
+4-7. PROCEDURE
+
+(1) PROCEDURE : SQL 명령어 저장, 매개 변수를 활용하여 자동적으로 실행
+(2) 생성 : CREATE PROCEDURE [PROCEDURE명] (@매개 변수 AS 데이터 형식) AS SELECT ~ WHERE ~
+** 데이터베이스의 프로그래밍 기능, 저장 프로시저에서 확인 가능
+** 가상 테이블이 아니기 때문에 열 이름 중복에도 불구하고 모든 열(*) 조회 가능
+(3) 실행 : EXEC [PROCEDURE명] 변수값
+** PROCEDURE 생성 시 WHERE절에 매개 변수를 사용했다면 매개 변수 = 변수값으로 필터되어 조회
+(4) 수정 : ALTER PROCEDURE [PROCEDURE명] (@매개 변수 AS 데이터 형식) AS SELECT ~ WHERE ~
+(5) 삭제 : DROP PROCEDURE [PROCEDURE명]
+
+4-8. 데이터 마트
+
+(1) 데이터 마트 : 분석 목적에 맞게 데이터를 가공한 분석용 데이터 세트
+(2) 조회된 결과 테이블 생성 : SELECT ~ INTO [테이블명] FROM ~
+
+4-9. 데이터 정합성
+
+(1) 데이터 정합성 : 분석 데이터 값들이 서로 일관되게 일치함을 나타내는 정도
+(2) 중복 제거 / 차이 확인 : SELECT COUNT(DISTINCT 칼럼명) FROM [테이블명]
