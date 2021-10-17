@@ -14,3 +14,7 @@
 
 ### 2. Tableau 신병훈련소 10기 활동 (2021.08.27 ~ 2021.09.10)
 (참고 링크 : https://www.itevents.co.kr/company/tableau/2108_tableau_army/)
+
+
+### 3. TWBX 커뮤니티 3기 활동 (2021.10.15 ~ 2021.11.12)
+(참고 링크 : https://blog.naver.com/bigxdata)
