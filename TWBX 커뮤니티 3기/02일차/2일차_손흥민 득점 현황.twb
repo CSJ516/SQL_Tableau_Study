@@ -1,0 +1,1355 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20213.21.0917.1006                               -->
+<workbook original-version='18.1' source-build='2021.3.1 (20213.21.0917.1006)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <repository-location id='TWBX2__16346102818110' path='/workbooks' revision='1.0' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='토트넘 홋스퍼 손흥민 득점 추출' inline='true' name='federated.1kf3frh1j6a7ej1c5lv141f60ocy' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='토트넘 홋스퍼 손흥민 득점' name='hyper.066w44x1ynqm5s17cxyp60kzadtf'>
+            <connection authentication='auth-none' author-locale='ko_KR' class='hyper' dbname='C:/Users/dalgo/Desktop/Github/SQL_Tableau_Study/TWBX 커뮤니티 3기/02일차/토트넘 홋스퍼 손흥민 득점.hyper' default-settings='yes' server='' sslmode='' username='tableau_internal_user' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='hyper.066w44x1ynqm5s17cxyp60kzadtf' name='Extract' table='[Extract].[Extract]' type='table' />
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='hyper.066w44x1ynqm5s17cxyp60kzadtf' name='Extract' table='[Extract].[Extract]' type='table' />
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Season</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Season]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Season</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>7</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_ABC6D61BC3E042738789497492048E2F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>competition</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[competition]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>competition</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>6</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_ABC6D61BC3E042738789497492048E2F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Matchday</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Matchday]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Matchday</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>44</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_ABC6D61BC3E042738789497492048E2F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Date]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Date</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>88</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_ABC6D61BC3E042738789497492048E2F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Venue</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Venue]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Venue</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>2</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_ABC6D61BC3E042738789497492048E2F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>For</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[For]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>For</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_ABC6D61BC3E042738789497492048E2F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Opponent</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Opponent]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Opponent</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>40</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_ABC6D61BC3E042738789497492048E2F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Result</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[Result]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Result</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <approx-count>30</approx-count>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_ABC6D61BC3E042738789497492048E2F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pos.</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Pos.]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Pos.</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>6</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_ABC6D61BC3E042738789497492048E2F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Minute</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Minute]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Minute</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>62</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_ABC6D61BC3E042738789497492048E2F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Type of goal</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Type of goal]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Type of goal</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>9</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_ABC6D61BC3E042738789497492048E2F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Goal assist</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Goal assist]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Goal assist</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>26</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_ABC6D61BC3E042738789497492048E2F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[Season]' role='dimension' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='Extract' datatype='table' name='[__tableau_internal_object_id__].[Extract (Extract.Extract)_ABC6D61BC3E042738789497492048E2F]' role='measure' type='quantitative' />
+      <column caption='Competition' datatype='string' name='[competition]' role='dimension' type='nominal' />
+      <column-instance column='[competition]' derivation='None' name='[none:competition:nk]' pivot='key' type='nominal' />
+      <group caption='동작(Season)' hidden='true' name='[Action (Season)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Season]' />
+        </groupfilter>
+      </group>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:competition:nk]' type='palette'>
+            <map to='#2a2a3f'>
+              <bucket>&quot;Premier League&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;EFL Cup&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Europa League&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;FA Cup&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;UEFA Champions League&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Europa League Qualifying&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;대한민국&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Extract' id='Extract (Extract.Extract)_ABC6D61BC3E042738789497492048E2F'>
+            <properties context=''>
+              <relation connection='hyper.066w44x1ynqm5s17cxyp60kzadtf' name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <actions>
+    <action caption='시즌별 득점 필터' name='[Action1_A4A559BE0B914358B76DAC47FE964B3D]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Son Heung-min&apos;s 100th Goals for TOT' type='sheet' worksheet='1. 시즌별 득점' />
+      <link caption='시즌별 득점 필터' delimiter=',' escape='\' expression='tsl:Son%20Heung-min%27s%20100th%20Goals%20for%20TOT?%5Bfederated.1kf3frh1j6a7ej1c5lv141f60ocy%5D.%5BSeason%5D~s0=&lt;[federated.1kf3frh1j6a7ej1c5lv141f60ocy].[Season]~na&gt;' include-null='true' multi-select='true' url-escape='true' />
+      <command command='tsc:tsl-filter'>
+        <param name='exclude' value='1. 시즌별 득점' />
+        <param name='target' value='Son Heung-min&apos;s 100th Goals for TOT' />
+      </command>
+    </action>
+    <datasources>
+      <datasource caption='토트넘 홋스퍼 손흥민 득점 추출' name='federated.1kf3frh1j6a7ej1c5lv141f60ocy' />
+    </datasources>
+    <datasource-dependencies datasource='federated.1kf3frh1j6a7ej1c5lv141f60ocy'>
+      <column datatype='string' name='[Season]' role='dimension' type='nominal' />
+    </datasource-dependencies>
+  </actions>
+  <worksheets>
+    <worksheet name='1. 시즌별 득점'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontname='Lucida Calligraphy' fontsize='11'>Son&apos;s Goals by Season</run>
+          </formatted-text>
+        </title>
+        <caption>
+          <formatted-text>
+            <run fontcolor='#1d1c1d' fontname='Slack-Lato,appleLogo,sans-serif'>Q-1. 손흥민 선수가 토트넘에서 시즌 중 가장 많은 골을 기록한 시즌은 언제인가요?  그 시즌에 Premier League에서 기록한 득점은 얼마인가요?</run>
+          </formatted-text>
+        </caption>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='토트넘 홋스퍼 손흥민 득점 추출' name='federated.1kf3frh1j6a7ej1c5lv141f60ocy' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1kf3frh1j6a7ej1c5lv141f60ocy'>
+            <_.fcp.ObjectModelTableType.false...column caption='Extract' datatype='integer' name='[__tableau_internal_object_id__].[Extract (Extract.Extract)_ABC6D61BC3E042738789497492048E2F]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Season]' role='dimension' type='nominal' />
+            <_.fcp.ObjectModelTableType.true...column caption='Extract' datatype='table' name='[__tableau_internal_object_id__].[Extract (Extract.Extract)_ABC6D61BC3E042738789497492048E2F]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[Extract (Extract.Extract)_ABC6D61BC3E042738789497492048E2F]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:Extract (Extract.Extract)_ABC6D61BC3E042738789497492048E2F:qk]' pivot='key' type='quantitative' />
+            <column caption='Competition' datatype='string' name='[competition]' role='dimension' type='nominal' />
+            <column-instance column='[Season]' derivation='None' name='[none:Season:nk]' pivot='key' type='nominal' />
+            <column-instance column='[competition]' derivation='None' name='[none:competition:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <natural-sort column='[federated.1kf3frh1j6a7ej1c5lv141f60ocy].[none:Season:nk]' direction='DESC' />
+          <manual-sort column='[federated.1kf3frh1j6a7ej1c5lv141f60ocy].[none:competition:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Europa League Qualifying&quot;</bucket>
+              <bucket>&quot;Europa League&quot;</bucket>
+              <bucket>&quot;EFL Cup&quot;</bucket>
+              <bucket>&quot;UEFA Champions League&quot;</bucket>
+              <bucket>&quot;FA Cup&quot;</bucket>
+              <bucket>&quot;Premier League&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='1' field='[federated.1kf3frh1j6a7ej1c5lv141f60ocy].[__tableau_internal_object_id__].[cnt:Extract (Extract.Extract)_ABC6D61BC3E042738789497492048E2F:qk]' field-type='quantitative' fold='true' scope='cols' synchronized='true' type='space' />
+            <format attr='display' class='0' field='[federated.1kf3frh1j6a7ej1c5lv141f60ocy].[__tableau_internal_object_id__].[cnt:Extract (Extract.Extract)_ABC6D61BC3E042738789497492048E2F:qk]' scope='cols' value='false' />
+            <format attr='display' class='1' field='[federated.1kf3frh1j6a7ej1c5lv141f60ocy].[__tableau_internal_object_id__].[cnt:Extract (Extract.Extract)_ABC6D61BC3E042738789497492048E2F:qk]' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-align' data-class='subtotal' field='[federated.1kf3frh1j6a7ej1c5lv141f60ocy].[__tableau_internal_object_id__].[cnt:Extract (Extract.Extract)_ABC6D61BC3E042738789497492048E2F:qk]' value='auto' />
+          </style-rule>
+          <style-rule element='legend'>
+            <format attr='col-width' field='[federated.1kf3frh1j6a7ej1c5lv141f60ocy].[none:competition:nk]' value='166' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.1kf3frh1j6a7ej1c5lv141f60ocy].[none:competition:nk]' value='Competition'>
+              <formatted-text>
+                <run fontname='Tableau Regular'>Competition</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <text column='[federated.1kf3frh1j6a7ej1c5lv141f60ocy].[__tableau_internal_object_id__].[cnt:Extract (Extract.Extract)_ABC6D61BC3E042738789497492048E2F:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878' fontname='Lucida Calligraphy'>Competition:&#9;</run>
+                <run bold='true' fontname='Lucida Calligraphy'><![CDATA[<[federated.1kf3frh1j6a7ej1c5lv141f60ocy].[none:competition:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878' fontname='Lucida Calligraphy'>Season:&#9;</run>
+                <run bold='true' fontname='Lucida Calligraphy'><![CDATA[<[federated.1kf3frh1j6a7ej1c5lv141f60ocy].[none:Season:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878' fontname='Lucida Calligraphy'>Goals:&#9;</run>
+                <run bold='true' fontname='Lucida Calligraphy'><![CDATA[<[federated.1kf3frh1j6a7ej1c5lv141f60ocy].[__tableau_internal_object_id__].[cnt:Extract (Extract.Extract)_ABC6D61BC3E042738789497492048E2F:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.1kf3frh1j6a7ej1c5lv141f60ocy].[__tableau_internal_object_id__].[cnt:Extract (Extract.Extract)_ABC6D61BC3E042738789497492048E2F:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1kf3frh1j6a7ej1c5lv141f60ocy].[none:competition:nk]' />
+              <text column='[federated.1kf3frh1j6a7ej1c5lv141f60ocy].[__tableau_internal_object_id__].[cnt:Extract (Extract.Extract)_ABC6D61BC3E042738789497492048E2F:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878' fontname='Lucida Calligraphy'>Competition:&#9;</run>
+                <run bold='true' fontname='Lucida Calligraphy'><![CDATA[<[federated.1kf3frh1j6a7ej1c5lv141f60ocy].[none:competition:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878' fontname='Lucida Calligraphy'>Season:&#9;</run>
+                <run bold='true' fontname='Lucida Calligraphy'><![CDATA[<[federated.1kf3frh1j6a7ej1c5lv141f60ocy].[none:Season:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878' fontname='Lucida Calligraphy'>Goals:&#9;</run>
+                <run bold='true' fontname='Lucida Calligraphy'><![CDATA[<[federated.1kf3frh1j6a7ej1c5lv141f60ocy].[__tableau_internal_object_id__].[cnt:Extract (Extract.Extract)_ABC6D61BC3E042738789497492048E2F:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.1kf3frh1j6a7ej1c5lv141f60ocy].[__tableau_internal_object_id__].[cnt:Extract (Extract.Extract)_ABC6D61BC3E042738789497492048E2F:qk]' x-index='1'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='GanttBar' />
+            <encodings>
+              <text column='[federated.1kf3frh1j6a7ej1c5lv141f60ocy].[__tableau_internal_object_id__].[cnt:Extract (Extract.Extract)_ABC6D61BC3E042738789497492048E2F:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878' fontname='Lucida Calligraphy'>Competition:&#9;</run>
+                <run bold='true' fontname='Lucida Calligraphy'><![CDATA[<[federated.1kf3frh1j6a7ej1c5lv141f60ocy].[none:competition:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878' fontname='Lucida Calligraphy'>Season:&#9;</run>
+                <run bold='true' fontname='Lucida Calligraphy'><![CDATA[<[federated.1kf3frh1j6a7ej1c5lv141f60ocy].[none:Season:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878' fontname='Lucida Calligraphy'>Goals:&#9;</run>
+                <run bold='true' fontname='Lucida Calligraphy'><![CDATA[<[federated.1kf3frh1j6a7ej1c5lv141f60ocy].[__tableau_internal_object_id__].[cnt:Extract (Extract.Extract)_ABC6D61BC3E042738789497492048E2F:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#ffffff' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1kf3frh1j6a7ej1c5lv141f60ocy].[none:Season:nk]</rows>
+        <cols>([federated.1kf3frh1j6a7ej1c5lv141f60ocy].[__tableau_internal_object_id__].[cnt:Extract (Extract.Extract)_ABC6D61BC3E042738789497492048E2F:qk] + [federated.1kf3frh1j6a7ej1c5lv141f60ocy].[__tableau_internal_object_id__].[cnt:Extract (Extract.Extract)_ABC6D61BC3E042738789497492048E2F:qk])</cols>
+      </table>
+      <simple-id uuid='{2856AAB2-B9E6-446F-A5A6-8AC584687EA1}' />
+    </worksheet>
+    <worksheet name='2. 유형별 득점'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontname='Lucida Calligraphy' fontsize='11'>Type of Goal</run>
+          </formatted-text>
+        </title>
+        <caption>
+          <formatted-text>
+            <run fontcolor='#1d1c1d' fontname='Slack-Lato,appleLogo,sans-serif'>Q-2. Type of Goal을 기준으로 트리맵을 만듭니다. 왼발 슛으로 기록한 골은 전체에서 몇 %를 차지하나요?</run>
+          </formatted-text>
+        </caption>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='토트넘 홋스퍼 손흥민 득점 추출' name='federated.1kf3frh1j6a7ej1c5lv141f60ocy' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1kf3frh1j6a7ej1c5lv141f60ocy'>
+            <column datatype='string' name='[Season]' role='dimension' type='nominal' />
+            <_.fcp.ObjectModelTableType.false...column caption='Extract' datatype='integer' name='[__tableau_internal_object_id__].[Extract (Extract.Extract)_ABC6D61BC3E042738789497492048E2F]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Type of goal]' role='dimension' type='nominal' />
+            <_.fcp.ObjectModelTableType.true...column caption='Extract' datatype='table' name='[__tableau_internal_object_id__].[Extract (Extract.Extract)_ABC6D61BC3E042738789497492048E2F]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[Extract (Extract.Extract)_ABC6D61BC3E042738789497492048E2F]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:Extract (Extract.Extract)_ABC6D61BC3E042738789497492048E2F:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Type of goal]' derivation='None' name='[none:Type of goal:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1kf3frh1j6a7ej1c5lv141f60ocy].[Action (Season)]'>
+            <groupfilter function='level-members' level='[Season]' user:ui-action-filter='[Action1_A4A559BE0B914358B76DAC47FE964B3D]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1kf3frh1j6a7ej1c5lv141f60ocy].[Action (Season)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1kf3frh1j6a7ej1c5lv141f60ocy].[__tableau_internal_object_id__].[cnt:Extract (Extract.Extract)_ABC6D61BC3E042738789497492048E2F:qk]' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-diverging'>
+                <color>#ffffff</color>
+                <color>#f8f8f8</color>
+                <color>#f2f2f2</color>
+                <color>#ececec</color>
+                <color>#e5e5e5</color>
+                <color>#dfdfdf</color>
+                <color>#d9d9d9</color>
+                <color>#b4b4bf</color>
+                <color>#9393a5</color>
+                <color>#74748b</color>
+                <color>#585872</color>
+                <color>#404058</color>
+                <color>#2a2a3f</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.1kf3frh1j6a7ej1c5lv141f60ocy].[__tableau_internal_object_id__].[cnt:Extract (Extract.Extract)_ABC6D61BC3E042738789497492048E2F:qk]' />
+              <color column='[federated.1kf3frh1j6a7ej1c5lv141f60ocy].[__tableau_internal_object_id__].[cnt:Extract (Extract.Extract)_ABC6D61BC3E042738789497492048E2F:qk]' />
+              <text column='[federated.1kf3frh1j6a7ej1c5lv141f60ocy].[none:Type of goal:nk]' />
+              <text column='[federated.1kf3frh1j6a7ej1c5lv141f60ocy].[__tableau_internal_object_id__].[cnt:Extract (Extract.Extract)_ABC6D61BC3E042738789497492048E2F:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878' fontname='Lucida Calligraphy'>Type of goal:&#9;</run>
+                <run bold='true' fontname='Lucida Calligraphy'><![CDATA[<[federated.1kf3frh1j6a7ej1c5lv141f60ocy].[none:Type of goal:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878' fontname='Lucida Calligraphy'>Goals:&#9;</run>
+                <run bold='true' fontname='Lucida Calligraphy'><![CDATA[<[federated.1kf3frh1j6a7ej1c5lv141f60ocy].[__tableau_internal_object_id__].[cnt:Extract (Extract.Extract)_ABC6D61BC3E042738789497492048E2F:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#000000' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+        <mark-labels>
+          <mark-label id='0' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1kf3frh1j6a7ej1c5lv141f60ocy].[__tableau_internal_object_id__].[cnt:Extract (Extract.Extract)_ABC6D61BC3E042738789497492048E2F:qk]</field>
+                  <field>[federated.1kf3frh1j6a7ej1c5lv141f60ocy].[none:Type of goal:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>1</value>
+                <value>&quot;Counter attack goal&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+        </mark-labels>
+      </table>
+      <simple-id uuid='{8191D6F7-2C97-473B-8F07-D19EF756A563}' />
+    </worksheet>
+    <worksheet name='3. 대회별 득점'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontname='Lucida Calligraphy' fontsize='11'>Competition</run>
+          </formatted-text>
+        </title>
+        <caption>
+          <formatted-text>
+            <run fontcolor='#1d1c1d' fontname='Slack-Lato,appleLogo,sans-serif'>Q-3. Competition을 기준으로 트리맵을 만듭니다. Premier League에서 기록한 골은 전체 대비 % 비중을 차지하고 있나요?</run>
+          </formatted-text>
+        </caption>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='토트넘 홋스퍼 손흥민 득점 추출' name='federated.1kf3frh1j6a7ej1c5lv141f60ocy' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1kf3frh1j6a7ej1c5lv141f60ocy'>
+            <_.fcp.ObjectModelTableType.false...column caption='Extract' datatype='integer' name='[__tableau_internal_object_id__].[Extract (Extract.Extract)_ABC6D61BC3E042738789497492048E2F]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Season]' role='dimension' type='nominal' />
+            <_.fcp.ObjectModelTableType.true...column caption='Extract' datatype='table' name='[__tableau_internal_object_id__].[Extract (Extract.Extract)_ABC6D61BC3E042738789497492048E2F]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[Extract (Extract.Extract)_ABC6D61BC3E042738789497492048E2F]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:Extract (Extract.Extract)_ABC6D61BC3E042738789497492048E2F:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[Extract (Extract.Extract)_ABC6D61BC3E042738789497492048E2F]' derivation='Count' name='[__tableau_internal_object_id__].[pcto:cnt:Extract (Extract.Extract)_ABC6D61BC3E042738789497492048E2F:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column caption='Competition' datatype='string' name='[competition]' role='dimension' type='nominal' />
+            <column-instance column='[competition]' derivation='None' name='[none:competition:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1kf3frh1j6a7ej1c5lv141f60ocy].[Action (Season)]'>
+            <groupfilter function='level-members' level='[Season]' user:ui-action-filter='[Action1_A4A559BE0B914358B76DAC47FE964B3D]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1kf3frh1j6a7ej1c5lv141f60ocy].[Action (Season)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1kf3frh1j6a7ej1c5lv141f60ocy].[__tableau_internal_object_id__].[cnt:Extract (Extract.Extract)_ABC6D61BC3E042738789497492048E2F:qk]' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-diverging'>
+                <color>#ffffff</color>
+                <color>#f8f8f8</color>
+                <color>#f2f2f2</color>
+                <color>#ececec</color>
+                <color>#e5e5e5</color>
+                <color>#dfdfdf</color>
+                <color>#d9d9d9</color>
+                <color>#b4b4bf</color>
+                <color>#9393a5</color>
+                <color>#74748b</color>
+                <color>#585872</color>
+                <color>#404058</color>
+                <color>#2a2a3f</color>
+              </color-palette>
+            </encoding>
+            <encoding attr='color' field='[federated.1kf3frh1j6a7ej1c5lv141f60ocy].[__tableau_internal_object_id__].[pcto:cnt:Extract (Extract.Extract)_ABC6D61BC3E042738789497492048E2F:qk]' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-diverging'>
+                <color>#ffffff</color>
+                <color>#f8f8f8</color>
+                <color>#f2f2f2</color>
+                <color>#ececec</color>
+                <color>#e5e5e5</color>
+                <color>#dfdfdf</color>
+                <color>#d9d9d9</color>
+                <color>#b4b4bf</color>
+                <color>#9393a5</color>
+                <color>#74748b</color>
+                <color>#585872</color>
+                <color>#404058</color>
+                <color>#2a2a3f</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.1kf3frh1j6a7ej1c5lv141f60ocy].[__tableau_internal_object_id__].[cnt:Extract (Extract.Extract)_ABC6D61BC3E042738789497492048E2F:qk]' />
+              <color column='[federated.1kf3frh1j6a7ej1c5lv141f60ocy].[__tableau_internal_object_id__].[cnt:Extract (Extract.Extract)_ABC6D61BC3E042738789497492048E2F:qk]' />
+              <text column='[federated.1kf3frh1j6a7ej1c5lv141f60ocy].[none:competition:nk]' />
+              <text column='[federated.1kf3frh1j6a7ej1c5lv141f60ocy].[__tableau_internal_object_id__].[pcto:cnt:Extract (Extract.Extract)_ABC6D61BC3E042738789497492048E2F:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878' fontname='Lucida Calligraphy'>Competition:&#9;</run>
+                <run bold='true' fontname='Lucida Calligraphy'><![CDATA[<[federated.1kf3frh1j6a7ej1c5lv141f60ocy].[none:competition:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878' fontname='Lucida Calligraphy'>Goals:&#9;</run>
+                <run bold='true' fontname='Lucida Calligraphy'><![CDATA[<[federated.1kf3frh1j6a7ej1c5lv141f60ocy].[__tableau_internal_object_id__].[cnt:Extract (Extract.Extract)_ABC6D61BC3E042738789497492048E2F:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878' fontname='Lucida Calligraphy'>Goals(%):&#9;</run>
+                <run bold='true' fontname='Lucida Calligraphy'><![CDATA[<[federated.1kf3frh1j6a7ej1c5lv141f60ocy].[__tableau_internal_object_id__].[pcto:cnt:Extract (Extract.Extract)_ABC6D61BC3E042738789497492048E2F:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#000000' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{E3C7B28F-46FB-46D6-8AE6-02A2841DEAC7}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Son Heung-min&apos;s 100th Goals for TOT'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontname='Lucida Calligraphy' fontsize='20'>Son Heung-min&apos;s 100th Goals for TOT</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size maxheight='1000' maxwidth='1200' minheight='1000' minwidth='1200' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98400' id='14' param='vert' type-v2='layout-flow' w='98666' x='667' y='800'>
+            <zone fixed-size='122' h='13000' id='15' is-fixed='true' type-v2='title' w='98666' x='667' y='800'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='85400' id='12' type-v2='layout-basic' w='98666' x='667' y='13800'>
+              <zone h='31500' id='7' param='horz' type-v2='layout-flow' w='98666' x='667' y='67700'>
+                <zone h='31500' id='5' type-v2='layout-basic' w='98666' x='667' y='67700'>
+                  <zone h='31500' id='9' name='2. 유형별 득점' w='49333' x='667' y='67700'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='31500' id='10' name='3. 대회별 득점' w='49333' x='50000' y='67700'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+              </zone>
+              <zone h='53900' id='11' param='vert' type-v2='layout-flow' w='98666' x='667' y='13800'>
+                <zone fixed-size='37' h='4500' id='8' is-fixed='true' leg-item-layout='horz' name='1. 시즌별 득점' pane-specification-id='3' param='[federated.1kf3frh1j6a7ej1c5lv141f60ocy].[none:competition:nk]' type-v2='color' w='98666' x='667' y='13800'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='49399' id='3' name='1. 시즌별 득점' w='98666' x='667' y='18300'>
+                  <layout-cache cell-count-h='7' non-cell-size-h='63' type-h='cell' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run bold='true' fontalignment='1' fontname='Lucida Calligraphy' fontsize='20'>Son Heung-min&apos;s 100th Goals for TOT</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='1000' minheight='1000' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='31' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98400' id='30' param='vert' type-v2='layout-flow' w='98666' x='667' y='800'>
+                <zone fixed-size='122' h='13000' id='15' type-v2='title' w='98666' x='667' y='800'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49399' id='3' is-fixed='true' name='1. 시즌별 득점' w='98666' x='667' y='18300'>
+                  <layout-cache cell-count-h='7' non-cell-size-h='63' type-h='cell' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='37' h='4500' id='8' leg-item-layout='horz' name='1. 시즌별 득점' pane-specification-id='3' param='[federated.1kf3frh1j6a7ej1c5lv141f60ocy].[none:competition:nk]' type-v2='color' w='98666' x='667' y='13800'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='31500' id='9' is-fixed='true' name='2. 유형별 득점' w='49333' x='667' y='67700'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='31500' id='10' is-fixed='true' name='3. 대회별 득점' w='49333' x='50000' y='67700'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{21B9D80A-D911-4255-AD70-50ED56639496}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.5' source-height='44'>
+    <window class='dashboard' maximized='true' name='Son Heung-min&apos;s 100th Goals for TOT'>
+      <viewpoints>
+        <viewpoint name='1. 시즌별 득점'>
+          <zoom type='entire-view' />
+          <highlight>
+            <color-one-way>
+              <field>[federated.1kf3frh1j6a7ej1c5lv141f60ocy].[none:competition:nk]</field>
+            </color-one-way>
+          </highlight>
+        </viewpoint>
+        <viewpoint name='2. 유형별 득점'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='3. 대회별 득점'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{C3969611-9C6E-4142-8A1B-1791F1FE5949}' />
+    </window>
+    <window class='worksheet' name='1. 시즌별 득점'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='caption' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='3' param='[federated.1kf3frh1j6a7ej1c5lv141f60ocy].[none:competition:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1kf3frh1j6a7ej1c5lv141f60ocy].[none:Season:nk]</field>
+            <field>[federated.1kf3frh1j6a7ej1c5lv141f60ocy].[none:Type of goal:nk]</field>
+            <field>[federated.1kf3frh1j6a7ej1c5lv141f60ocy].[none:competition:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{B2029994-12CD-484F-8CD0-6E2364DB2709}' />
+    </window>
+    <window class='worksheet' name='2. 유형별 득점'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='caption' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1kf3frh1j6a7ej1c5lv141f60ocy].[none:Type of goal:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{70F9701D-B9A3-4326-97C9-0B957AB9FEA7}' />
+    </window>
+    <window class='worksheet' name='3. 대회별 득점'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='caption' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1kf3frh1j6a7ej1c5lv141f60ocy].[none:competition:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{427B4A82-5E04-4AF5-95CE-C5C740FF959A}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='1. 시즌별 득점' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='2. 유형별 득점' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='3. 대회별 득점' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABYlAAAWJQFJUiTw
+      AAAGuklEQVR4nO3a61NU9wHG8Qf2xrLcZbl4iyY2gGPsQLiEJGKdmpimcTq+64v2Vf/GttYL
+      WtsElYAKkdsSkJWbILCILMsCu32RGZvayth2Ao7P9/Pu7J45+ztnznfO7+w5Bfl8Pi/AVOF+
+      DwDYTwQAa8EfL2QyGSUSif0aC7Dn/iWARCKhr776nUKhyH6NB9hTwZc/CIUiikSK92MswJ7j
+      HgDWCADWdgmgXL/9/UV98eVnam44+F9t9MiRQ7t+X3b4ZzpRw30G9t+/3QP8U1ip2Qld7h7T
+      pYtdClYfVTxepXtf39WHnS0K5LO6cqVHv770pTbSGUUKt5QvDOjmn66rri6u+aV1/erzDu1k
+      1nXr7pg+bj+pQPaZ/tzdr1BJhcozM5Kk+vca1NZ0WKnFWfWOPlVXx0kVBXb0x8u39en5swoV
+      Fio1PaJ8+ID6+u+rq6tdd+5P6vNzzdpOr+nqtR5t8SgP/6Ndp0Dvn/65LnxxVvPJSR08ekS9
+      N7pV8u5JZZ881qP1YrU3Vmt1YVo3bw9qMTmugUfLqo6GVVVVqca2Dj2fSmi1oExNx2tVG8vp
+      cne/Xj5XO9pPaWQoocMnGhTOZbWR3VbV8ffVcOy4thfHdbXnocpKo6qqrFCBpHi8SqfaW7U8
+      mVA2Vq1j8dhPd3Tw1tvlCiCNDTzQX64/lCT9su6oFlczCq9vqLS+RNPzSY0/zajpwA/rvnxi
+      rz9P692KUk3MJbW8uqlowbRy/+E3MtmcYtGwRofG9EFnm8bvfqNARY1yO1nFSkoUK91WKCAp
+      GFAoXKSK0qjSsynFy2OamZrU4lr2/z8KsLXLFeC5hsfmXiyNDY9LkmYe9mviWYFqKouUSq1p
+      LJFUdi2liellPZ1OajGd1chIQhP3bmtmM6rK4qBSSwv6/vHSi22lF6dV29CqMx+d0t+v3FRZ
+      bZ3yWxvq6+lXY3OzVqfG9Hg2qeRaSM0njyqXy+n+6CN93HlaD+59p+Heb7ScL1VZpEDp7PZP
+      dnDw9iv48ctwg4ODunTpD2/Ec4BAuEhdZzsVKwqq96+39OTZ5n4PCW+hXadA+2knm9GNqzf2
+      exh4y/EcANZ2uQIUqPPcWZWEchru69dGNK6PTh9TamFOX387IkkqKq/R+TMfaP3Ziu4NTqul
+      pUGBUEzRrTkt5qpUGUzr8vV+tbc16fadgT3aJeD1vfIKEDvUpLrAkoa+G9bsclqftDdpcGBE
+      g8OTL9Y509WioQdDGngwqtTKgrqv/+2Hm+CH4yqLbGt+K6rW043KZdIqjryxsy0Ye2UA8YP1
+      igYLFT/ynj77tEW1NZUqLS3Vxd9cUFGwQJJUW31AsbISfXLhvA5VRKRAVCeqC5WYX9fGTkTv
+      VBap6mC94rV1OveLtj3bKeB1vTKAmfGEtgMhjSUeqag4pJmFVc0lp7SW2VGouETx8mJNzi7p
+      +cKsZpfTioYDamz9UGN9fcpLunX1mmaW1pQYf6zl+Wnlgrz6gDfPK+clWytJ3UkUq+PUYV27
+      eVdbgZg62ls12t+rTD6s+nKpp/uG2tpblJ1N6PuFtN4pmVYiuSJJKigMaDE5qcmpJypta9HM
+      t/17tlPA63pjnwMAe4G/QWGNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCN
+      AGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCN
+      AGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCN
+      AGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCN
+      AGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCN
+      AGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCN
+      AGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCN
+      AGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCN
+      AGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCN
+      AGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGAt+PIH6+sr2txc34+xAHvuH6Ru
+      tVFU+NfOAAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='Son Heung-min&apos;s 100th Goals for TOT' width='192'>
+      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
+      lt0khMfwJWSxrjaXoHuEn/36T6yp1PDLZgtprgkuu+ILpGgSAfjlz37O7f/yFP3dBkrqluOw
+      tLBptwXBtocB91fpa9nO566/hAcf/QNP//grBNW5cdDw5wbn/xVAqWXtyjoMrW1csGY1ssRk
+      PrV+HX3dRv77dy9zwZo1yCQxbv/GP5CWkoLa30eP3cPSjTexrjYXgF3vbSK9tI5oKERxSTHd
+      lkHKy/ORHp1dHR73Ig+N0dvRxm/+9BYv//F/WLbqQsKCjIDtMA6Zjud/9Ssqamsx6Q1UVlcT
+      jYqi5MXA+Z8AQI+xhff2mqgrn3ywpKx2Cf6JYSRpJVRlq+joGUaNgyu+cBeNK5ZTWphNkjTE
+      hHdShly9tBHBYyeSWsWNn1qOPSQnV/1R0937rTvZum0/oyPDLF26lAvWbaC/4xANl91MQ00J
+      7oFOSpasIjc1gWFXCF1ChDHP7D9AI3LmxO1EmL1jPy/tG+Gua+p58sVtfO/v75jRcf7RTp59
+      9TDfufumj3z1mjlotDHQbeLG2+4mXa2Yq7BFZpm4TIC2QweJyFSoEwQ8gRj1S5aglJ1eLNbb
+      bcbhi1JXV4P8VMM8IucMcZkAIiIfEhd9ABGRkyEmgEhcc9xwdE5OBYmJmoWIZcGRSGKUldWc
+      3vAcQqORcs89t81LWa2trXz/+9+ftm2xn0/HJUBioga1OnUhYllwJJIoWVmFCx3GrJKaKmP9
+      +vULVv5iP5/EWyCRuOakCVBRXcvqtRdQlJuKTjc9g+vqK6f+Ly756BezsKKS5TXFJ/RXWlJw
+      wu11ddNXjUjOryA/+Xi7kuL5/GVWkpkx/bItTdSyprGC/Ny0qW2JKek0Lik6oYe0nExOtKBh
+      SenHVnlTaCnJO/5x0Nzc2V7VTqD94HaGXGGCnjG2btlCv905y2WcnGPPp9Oh1aWeVCpSUJA7
+      q3GdVJKSmZzEnr0H2XjJOuxDY4TlSTRWFRAO+tDkFJKamcNoTyeXXHEJr7/yGkOjLtasXob+
+      4AHWXLQOdaKEw60WllUX4HJOULtyFeo9e5BpdOhSkziw9zCr1yxFl6xGrzdTt2wZqRoplhFY
+      U7eCQUeIiaCU9GQNQ/1WLrv8Et7Y9AYDdsesNsCJUZKVqWFk1MPShnoUsSD2iBqtwsPSFfVE
+      w0cYGnVRVluBwtVPZW0lapWSbqOFqtoSQn4/yuw8JMmJ9AclZKZp6Ld0k1dWTl6Gmh5LP3nF
+      Bei0Kiy949TWFaLLcNM36iM3Q4PT4aJhRR0H9jTPXn2jIdI1SobdEUzGFtZfehnbt24mP+uy
+      2fF/Gj48nz61cR0VK1MZ6WwjJa8EacDFWABUSgXZ6Wo8Dhe9Di/DvhgbL17ChH0EiTYTVcTJ
+      9n3tFBTmYrMNUlZbR35mKl3th8gqq0UrjdA55KEsPxWf10MwACNhOSqvjcqlk36ajnQcF9dJ
+      rwCJ2lS+cseXsBhaSUnWsKQil607DxCTJeActbN7fyc6LZg7upnww4olFdgsFvTmQRT4aOp2
+      cdPlVWzdcQBVSgYD1h7aTD1UlJfgiyWw4dJVGHftwTY0AYDX5ydRpSFBCa3Nh4jIE8jQJrBr
+      5x7yCgvoMHfP08l/LEkUFCSj1qXgGh3H0t2HfWiQoTEfNbUlTIyM0d1lI1EuoaXFxgUbGxk0
+      GZAolExMTGA291FUlEMoGCKrrIaoo5++wXEAAv4QCqWCBKWcXouVUBRy0jUcOWImLS2Fvr7B
+      2a2vLIEUbRIAEokMmYRTSrZnm0RtKqvXrKTDoCfid9LaHaCiQEN6ThYpiTIO7DvI2ISTYFiC
+      OllLSW0dCUEf2dlZaBNg+772af6qqkoI+AMUVNSg0yopLMylNFfHrt3NyFUaUpI1JKhTqF72
+      kZ8TcdIEGO638cc/vkZpZQVOlwezdZRLLrqAjJQkXC43REO4vCHCMSm6JDjU1jm5nTBhiZrG
+      smReft/Mp9avwuccxTrsoKG2hI4uC5KAk31726m/aC3JRxfvFIQY4ShIQj58YXA5PYy6g1x0
+      8YVYjHr8UcjPnq/OVJS0zGwKchLps7mYsI8TCgXxh2L4gjJyMlQYDT34/X5CMQhEBBoaCji4
+      tYnc6jqEcAi7bZSK+mL6eoeQyWDY0klCRiG65KSj9RUIh2PIZTG8/jBer5+hMQ/LllUxMTKC
+      JxAhL2v26hsNeth7uIOOw81UVBayecsW0vMrT3/gLDHcb2P/vmZsw06Gh0YhPEpnn5sh2wAO
+      1+RiDE6nB6fLg9flxmo0ElAkYOsfYHh4ZMqPRJHEqsY6uk0W5DLos9mRy6S4XB5sYy4uXLsC
+      baKcmCKBmpIMzK0f+TkRx80El5Q0nLDXrtVlUldViN8xxhGjdTbbZtEgkURZunT1Qocxq6Sm
+      ynj00R/NS1k7duzg2muvnbbtZOfTXJCZl095cR7jA1bMVvuMjpmxLN09PsK+vSOnNxQRWSBG
+      BvoZGTizFcdPOQyalZ9HghSyCwopzpv5e7HOD2RkH70FSUs7wbCUyJkhlbN8xRJUShmq5DSW
+      1ZdN7UrUpNCwtBJNio5VqxpoXF6FJi2dguw0JIokklVzp679/wyHrhUd7PYFAAAAAElFTkSu
+      QmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
