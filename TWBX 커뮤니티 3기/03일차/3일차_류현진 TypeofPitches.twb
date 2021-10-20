@@ -1,0 +1,1840 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20213.21.0917.1006                               -->
+<workbook original-version='18.1' source-build='2021.3.1 (20213.21.0917.1006)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.SingleValuePerNestSorting.true...SingleValuePerNestSorting />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <repository-location id='TWBX3__16347070495430' path='/workbooks' revision='1.0' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='20210401+(류현진 경기일정_MLB 2021)' inline='true' name='federated.1bev4s81v2qv1o1bwoffu0arvh4n' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='류현진 경기일정_MLB 2021' name='excel-direct.0rsk3771v2o15618iilmv07j5gf8'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/dalgo/Desktop/Github/SQL_Tableau_Study/TWBX 커뮤니티 3기/03일차/류현진 경기일정_MLB 2021.xlsx' interpretationMode='0' password='' server='' validate='no' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation all='true' name='20210401+' type='union'>
+          <columns header='yes'>
+            <column datatype='integer' name='No.' />
+            <column datatype='string' name='B/S' />
+            <column datatype='string' name='Velocity' />
+            <column datatype='date' date-parse-format='yyyyMMdd' name='Sheet' />
+            <column datatype='string' name='Table Name' />
+          </columns>
+          <relation connection='excel-direct.0rsk3771v2o15618iilmv07j5gf8' name='20210401' table='[&apos;20210401$&apos;]' type='table'>
+            <columns gridOrigin='A1:C93:no:A1:C93:0' header='yes' outcome='6'>
+              <column datatype='integer' name='No.' ordinal='0' />
+              <column datatype='string' name='B/S' ordinal='1' />
+              <column datatype='string' name='Velocity' ordinal='2' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.0rsk3771v2o15618iilmv07j5gf8' name='20210407' table='[&apos;20210407$&apos;]' type='table'>
+            <columns gridOrigin='A1:C91:no:A1:C91:0' header='yes' outcome='6'>
+              <column datatype='integer' name='No.' ordinal='0' />
+              <column datatype='string' name='B/S' ordinal='1' />
+              <column datatype='string' name='Velocity' ordinal='2' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.0rsk3771v2o15618iilmv07j5gf8' name='20210413' table='[&apos;20210413$&apos;]' type='table'>
+            <columns gridOrigin='A1:C96:no:A1:C96:0' header='yes' outcome='6'>
+              <column datatype='integer' name='No.' ordinal='0' />
+              <column datatype='string' name='B/S' ordinal='1' />
+              <column datatype='string' name='Velocity' ordinal='2' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.0rsk3771v2o15618iilmv07j5gf8' name='20210420' table='[&apos;20210420$&apos;]' type='table'>
+            <columns gridOrigin='A1:C84:no:A1:C84:0' header='yes' outcome='6'>
+              <column datatype='integer' name='No.' ordinal='0' />
+              <column datatype='string' name='B/S' ordinal='1' />
+              <column datatype='string' name='Velocity' ordinal='2' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.0rsk3771v2o15618iilmv07j5gf8' name='20210425' table='[&apos;20210425$&apos;]' type='table'>
+            <columns gridOrigin='A1:C63:no:A1:C63:0' header='yes' outcome='6'>
+              <column datatype='integer' name='No.' ordinal='0' />
+              <column datatype='string' name='B/S' ordinal='1' />
+              <column datatype='string' name='Velocity' ordinal='2' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.0rsk3771v2o15618iilmv07j5gf8' name='20210506' table='[&apos;20210506$&apos;]' type='table'>
+            <columns gridOrigin='A1:C92:no:A1:C92:0' header='yes' outcome='6'>
+              <column datatype='integer' name='No.' ordinal='0' />
+              <column datatype='string' name='B/S' ordinal='1' />
+              <column datatype='string' name='Velocity' ordinal='2' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.0rsk3771v2o15618iilmv07j5gf8' name='20210512' table='[&apos;20210512$&apos;]' type='table'>
+            <columns gridOrigin='A1:C95:no:A1:C95:0' header='yes' outcome='6'>
+              <column datatype='integer' name='No.' ordinal='0' />
+              <column datatype='string' name='B/S' ordinal='1' />
+              <column datatype='string' name='Velocity' ordinal='2' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.0rsk3771v2o15618iilmv07j5gf8' name='20210518' table='[&apos;20210518$&apos;]' type='table'>
+            <columns gridOrigin='A1:C101:no:A1:C101:0' header='yes' outcome='6'>
+              <column datatype='integer' name='No.' ordinal='0' />
+              <column datatype='string' name='B/S' ordinal='1' />
+              <column datatype='string' name='Velocity' ordinal='2' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.0rsk3771v2o15618iilmv07j5gf8' name='20210523' table='[&apos;20210523$&apos;]' type='table'>
+            <columns gridOrigin='A1:C108:no:A1:C108:0' header='yes' outcome='6'>
+              <column datatype='integer' name='No.' ordinal='0' />
+              <column datatype='string' name='B/S' ordinal='1' />
+              <column datatype='string' name='Velocity' ordinal='2' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.0rsk3771v2o15618iilmv07j5gf8' name='20210528' table='[&apos;20210528$&apos;]' type='table'>
+            <columns gridOrigin='A1:C92:no:A1:C92:0' header='yes' outcome='6'>
+              <column datatype='integer' name='No.' ordinal='0' />
+              <column datatype='string' name='B/S' ordinal='1' />
+              <column datatype='string' name='Velocity' ordinal='2' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.0rsk3771v2o15618iilmv07j5gf8' name='20210604' table='[&apos;20210604$&apos;]' type='table'>
+            <columns gridOrigin='A1:C92:no:A1:C92:0' header='yes' outcome='6'>
+              <column datatype='integer' name='No.' ordinal='0' />
+              <column datatype='string' name='B/S' ordinal='1' />
+              <column datatype='string' name='Velocity' ordinal='2' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.0rsk3771v2o15618iilmv07j5gf8' name='20210610' table='[&apos;20210610$&apos;]' type='table'>
+            <columns gridOrigin='A1:C96:no:A1:C96:0' header='yes' outcome='6'>
+              <column datatype='integer' name='No.' ordinal='0' />
+              <column datatype='string' name='B/S' ordinal='1' />
+              <column datatype='string' name='Velocity' ordinal='2' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.0rsk3771v2o15618iilmv07j5gf8' name='20210615' table='[&apos;20210615$&apos;]' type='table'>
+            <columns gridOrigin='A1:C93:no:A1:C93:0' header='yes' outcome='6'>
+              <column datatype='integer' name='No.' ordinal='0' />
+              <column datatype='string' name='B/S' ordinal='1' />
+              <column datatype='string' name='Velocity' ordinal='2' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.0rsk3771v2o15618iilmv07j5gf8' name='20210620' table='[&apos;20210620$&apos;]' type='table'>
+            <columns gridOrigin='A1:C101:no:A1:C101:0' header='yes' outcome='6'>
+              <column datatype='integer' name='No.' ordinal='0' />
+              <column datatype='string' name='B/S' ordinal='1' />
+              <column datatype='string' name='Velocity' ordinal='2' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.0rsk3771v2o15618iilmv07j5gf8' name='20210626' table='[&apos;20210626$&apos;]' type='table'>
+            <columns gridOrigin='A1:C92:no:A1:C92:0' header='yes' outcome='6'>
+              <column datatype='integer' name='No.' ordinal='0' />
+              <column datatype='string' name='B/S' ordinal='1' />
+              <column datatype='string' name='Velocity' ordinal='2' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.0rsk3771v2o15618iilmv07j5gf8' name='20210701' table='[&apos;20210701$&apos;]' type='table'>
+            <columns gridOrigin='A1:C86:no:A1:C86:0' header='yes' outcome='6'>
+              <column datatype='integer' name='No.' ordinal='0' />
+              <column datatype='string' name='B/S' ordinal='1' />
+              <column datatype='string' name='Velocity' ordinal='2' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.0rsk3771v2o15618iilmv07j5gf8' name='20210707' table='[&apos;20210707$&apos;]' type='table'>
+            <columns gridOrigin='A1:C87:no:A1:C87:0' header='yes' outcome='6'>
+              <column datatype='integer' name='No.' ordinal='0' />
+              <column datatype='string' name='B/S' ordinal='1' />
+              <column datatype='string' name='Velocity' ordinal='2' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.0rsk3771v2o15618iilmv07j5gf8' name='20210718' table='[&apos;20210718$&apos;]' type='table'>
+            <columns gridOrigin='A1:C84:no:A1:C84:0' header='yes' outcome='6'>
+              <column datatype='integer' name='No.' ordinal='0' />
+              <column datatype='string' name='B/S' ordinal='1' />
+              <column datatype='string' name='Velocity' ordinal='2' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.0rsk3771v2o15618iilmv07j5gf8' name='20210724' table='[&apos;20210724$&apos;]' type='table'>
+            <columns gridOrigin='A1:C78:no:A1:C78:0' header='yes' outcome='6'>
+              <column datatype='integer' name='No.' ordinal='0' />
+              <column datatype='string' name='B/S' ordinal='1' />
+              <column datatype='string' name='Velocity' ordinal='2' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.0rsk3771v2o15618iilmv07j5gf8' name='20210729' table='[&apos;20210729$&apos;]' type='table'>
+            <columns gridOrigin='A1:C88:no:A1:C88:0' header='yes' outcome='6'>
+              <column datatype='integer' name='No.' ordinal='0' />
+              <column datatype='string' name='B/S' ordinal='1' />
+              <column datatype='string' name='Velocity' ordinal='2' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.0rsk3771v2o15618iilmv07j5gf8' name='20210803' table='[&apos;20210803$&apos;]' type='table'>
+            <columns gridOrigin='A1:C100:no:A1:C100:0' header='yes' outcome='6'>
+              <column datatype='integer' name='No.' ordinal='0' />
+              <column datatype='string' name='B/S' ordinal='1' />
+              <column datatype='string' name='Velocity' ordinal='2' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.0rsk3771v2o15618iilmv07j5gf8' name='20210808' table='[&apos;20210808$&apos;]' type='table'>
+            <columns gridOrigin='A1:C77:no:A1:C77:0' header='yes' outcome='6'>
+              <column datatype='integer' name='No.' ordinal='0' />
+              <column datatype='string' name='B/S' ordinal='1' />
+              <column datatype='string' name='Velocity' ordinal='2' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.0rsk3771v2o15618iilmv07j5gf8' name='20210814' table='[&apos;20210814$&apos;]' type='table'>
+            <columns gridOrigin='A1:C90:no:A1:C90:0' header='yes' outcome='6'>
+              <column datatype='integer' name='No.' ordinal='0' />
+              <column datatype='string' name='B/S' ordinal='1' />
+              <column datatype='string' name='Velocity' ordinal='2' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.0rsk3771v2o15618iilmv07j5gf8' name='20210821' table='[&apos;20210821$&apos;]' type='table'>
+            <columns gridOrigin='A1:C106:no:A1:C106:0' header='yes' outcome='6'>
+              <column datatype='integer' name='No.' ordinal='0' />
+              <column datatype='string' name='B/S' ordinal='1' />
+              <column datatype='string' name='Velocity' ordinal='2' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.0rsk3771v2o15618iilmv07j5gf8' name='20210826' table='[&apos;20210826$&apos;]' type='table'>
+            <columns gridOrigin='A1:C67:no:A1:C67:0' header='yes' outcome='6'>
+              <column datatype='integer' name='No.' ordinal='0' />
+              <column datatype='string' name='B/S' ordinal='1' />
+              <column datatype='string' name='Velocity' ordinal='2' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.0rsk3771v2o15618iilmv07j5gf8' name='20210831' table='[&apos;20210831$&apos;]' type='table'>
+            <columns gridOrigin='A1:C96:no:A1:C96:0' header='yes' outcome='6'>
+              <column datatype='integer' name='No.' ordinal='0' />
+              <column datatype='string' name='B/S' ordinal='1' />
+              <column datatype='string' name='Velocity' ordinal='2' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.0rsk3771v2o15618iilmv07j5gf8' name='20210906' table='[&apos;20210906$&apos;]' type='table'>
+            <columns gridOrigin='A1:C81:no:A1:C81:0' header='yes' outcome='6'>
+              <column datatype='integer' name='No.' ordinal='0' />
+              <column datatype='string' name='B/S' ordinal='1' />
+              <column datatype='string' name='Velocity' ordinal='2' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.0rsk3771v2o15618iilmv07j5gf8' name='20210911' table='[&apos;20210911$&apos;]' type='table'>
+            <columns gridOrigin='A1:C70:no:A1:C70:0' header='yes' outcome='6'>
+              <column datatype='integer' name='No.' ordinal='0' />
+              <column datatype='string' name='B/S' ordinal='1' />
+              <column datatype='string' name='Velocity' ordinal='2' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.0rsk3771v2o15618iilmv07j5gf8' name='20210917' table='[&apos;20210917$&apos;]' type='table'>
+            <columns gridOrigin='A1:C49:no:A1:C49:0' header='yes' outcome='6'>
+              <column datatype='integer' name='No.' ordinal='0' />
+              <column datatype='string' name='B/S' ordinal='1' />
+              <column datatype='string' name='Velocity' ordinal='2' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.0rsk3771v2o15618iilmv07j5gf8' name='20210928' table='[&apos;20210928$&apos;]' type='table'>
+            <columns gridOrigin='A1:C95:no:A1:C95:0' header='yes' outcome='6'>
+              <column datatype='integer' name='No.' ordinal='0' />
+              <column datatype='string' name='B/S' ordinal='1' />
+              <column datatype='string' name='Velocity' ordinal='2' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.0rsk3771v2o15618iilmv07j5gf8' name='20211003' table='[&apos;20211003$&apos;]' type='table'>
+            <columns gridOrigin='A1:C78:no:A1:C78:0' header='yes' outcome='6'>
+              <column datatype='integer' name='No.' ordinal='0' />
+              <column datatype='string' name='B/S' ordinal='1' />
+              <column datatype='string' name='Velocity' ordinal='2' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation all='true' name='20210401+' type='union'>
+          <columns header='yes'>
+            <column datatype='integer' name='No.' />
+            <column datatype='string' name='B/S' />
+            <column datatype='string' name='Velocity' />
+            <column datatype='date' date-parse-format='yyyyMMdd' name='Sheet' />
+            <column datatype='string' name='Table Name' />
+          </columns>
+          <relation connection='excel-direct.0rsk3771v2o15618iilmv07j5gf8' name='20210401' table='[&apos;20210401$&apos;]' type='table'>
+            <columns gridOrigin='A1:C93:no:A1:C93:0' header='yes' outcome='6'>
+              <column datatype='integer' name='No.' ordinal='0' />
+              <column datatype='string' name='B/S' ordinal='1' />
+              <column datatype='string' name='Velocity' ordinal='2' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.0rsk3771v2o15618iilmv07j5gf8' name='20210407' table='[&apos;20210407$&apos;]' type='table'>
+            <columns gridOrigin='A1:C91:no:A1:C91:0' header='yes' outcome='6'>
+              <column datatype='integer' name='No.' ordinal='0' />
+              <column datatype='string' name='B/S' ordinal='1' />
+              <column datatype='string' name='Velocity' ordinal='2' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.0rsk3771v2o15618iilmv07j5gf8' name='20210413' table='[&apos;20210413$&apos;]' type='table'>
+            <columns gridOrigin='A1:C96:no:A1:C96:0' header='yes' outcome='6'>
+              <column datatype='integer' name='No.' ordinal='0' />
+              <column datatype='string' name='B/S' ordinal='1' />
+              <column datatype='string' name='Velocity' ordinal='2' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.0rsk3771v2o15618iilmv07j5gf8' name='20210420' table='[&apos;20210420$&apos;]' type='table'>
+            <columns gridOrigin='A1:C84:no:A1:C84:0' header='yes' outcome='6'>
+              <column datatype='integer' name='No.' ordinal='0' />
+              <column datatype='string' name='B/S' ordinal='1' />
+              <column datatype='string' name='Velocity' ordinal='2' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.0rsk3771v2o15618iilmv07j5gf8' name='20210425' table='[&apos;20210425$&apos;]' type='table'>
+            <columns gridOrigin='A1:C63:no:A1:C63:0' header='yes' outcome='6'>
+              <column datatype='integer' name='No.' ordinal='0' />
+              <column datatype='string' name='B/S' ordinal='1' />
+              <column datatype='string' name='Velocity' ordinal='2' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.0rsk3771v2o15618iilmv07j5gf8' name='20210506' table='[&apos;20210506$&apos;]' type='table'>
+            <columns gridOrigin='A1:C92:no:A1:C92:0' header='yes' outcome='6'>
+              <column datatype='integer' name='No.' ordinal='0' />
+              <column datatype='string' name='B/S' ordinal='1' />
+              <column datatype='string' name='Velocity' ordinal='2' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.0rsk3771v2o15618iilmv07j5gf8' name='20210512' table='[&apos;20210512$&apos;]' type='table'>
+            <columns gridOrigin='A1:C95:no:A1:C95:0' header='yes' outcome='6'>
+              <column datatype='integer' name='No.' ordinal='0' />
+              <column datatype='string' name='B/S' ordinal='1' />
+              <column datatype='string' name='Velocity' ordinal='2' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.0rsk3771v2o15618iilmv07j5gf8' name='20210518' table='[&apos;20210518$&apos;]' type='table'>
+            <columns gridOrigin='A1:C101:no:A1:C101:0' header='yes' outcome='6'>
+              <column datatype='integer' name='No.' ordinal='0' />
+              <column datatype='string' name='B/S' ordinal='1' />
+              <column datatype='string' name='Velocity' ordinal='2' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.0rsk3771v2o15618iilmv07j5gf8' name='20210523' table='[&apos;20210523$&apos;]' type='table'>
+            <columns gridOrigin='A1:C108:no:A1:C108:0' header='yes' outcome='6'>
+              <column datatype='integer' name='No.' ordinal='0' />
+              <column datatype='string' name='B/S' ordinal='1' />
+              <column datatype='string' name='Velocity' ordinal='2' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.0rsk3771v2o15618iilmv07j5gf8' name='20210528' table='[&apos;20210528$&apos;]' type='table'>
+            <columns gridOrigin='A1:C92:no:A1:C92:0' header='yes' outcome='6'>
+              <column datatype='integer' name='No.' ordinal='0' />
+              <column datatype='string' name='B/S' ordinal='1' />
+              <column datatype='string' name='Velocity' ordinal='2' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.0rsk3771v2o15618iilmv07j5gf8' name='20210604' table='[&apos;20210604$&apos;]' type='table'>
+            <columns gridOrigin='A1:C92:no:A1:C92:0' header='yes' outcome='6'>
+              <column datatype='integer' name='No.' ordinal='0' />
+              <column datatype='string' name='B/S' ordinal='1' />
+              <column datatype='string' name='Velocity' ordinal='2' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.0rsk3771v2o15618iilmv07j5gf8' name='20210610' table='[&apos;20210610$&apos;]' type='table'>
+            <columns gridOrigin='A1:C96:no:A1:C96:0' header='yes' outcome='6'>
+              <column datatype='integer' name='No.' ordinal='0' />
+              <column datatype='string' name='B/S' ordinal='1' />
+              <column datatype='string' name='Velocity' ordinal='2' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.0rsk3771v2o15618iilmv07j5gf8' name='20210615' table='[&apos;20210615$&apos;]' type='table'>
+            <columns gridOrigin='A1:C93:no:A1:C93:0' header='yes' outcome='6'>
+              <column datatype='integer' name='No.' ordinal='0' />
+              <column datatype='string' name='B/S' ordinal='1' />
+              <column datatype='string' name='Velocity' ordinal='2' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.0rsk3771v2o15618iilmv07j5gf8' name='20210620' table='[&apos;20210620$&apos;]' type='table'>
+            <columns gridOrigin='A1:C101:no:A1:C101:0' header='yes' outcome='6'>
+              <column datatype='integer' name='No.' ordinal='0' />
+              <column datatype='string' name='B/S' ordinal='1' />
+              <column datatype='string' name='Velocity' ordinal='2' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.0rsk3771v2o15618iilmv07j5gf8' name='20210626' table='[&apos;20210626$&apos;]' type='table'>
+            <columns gridOrigin='A1:C92:no:A1:C92:0' header='yes' outcome='6'>
+              <column datatype='integer' name='No.' ordinal='0' />
+              <column datatype='string' name='B/S' ordinal='1' />
+              <column datatype='string' name='Velocity' ordinal='2' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.0rsk3771v2o15618iilmv07j5gf8' name='20210701' table='[&apos;20210701$&apos;]' type='table'>
+            <columns gridOrigin='A1:C86:no:A1:C86:0' header='yes' outcome='6'>
+              <column datatype='integer' name='No.' ordinal='0' />
+              <column datatype='string' name='B/S' ordinal='1' />
+              <column datatype='string' name='Velocity' ordinal='2' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.0rsk3771v2o15618iilmv07j5gf8' name='20210707' table='[&apos;20210707$&apos;]' type='table'>
+            <columns gridOrigin='A1:C87:no:A1:C87:0' header='yes' outcome='6'>
+              <column datatype='integer' name='No.' ordinal='0' />
+              <column datatype='string' name='B/S' ordinal='1' />
+              <column datatype='string' name='Velocity' ordinal='2' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.0rsk3771v2o15618iilmv07j5gf8' name='20210718' table='[&apos;20210718$&apos;]' type='table'>
+            <columns gridOrigin='A1:C84:no:A1:C84:0' header='yes' outcome='6'>
+              <column datatype='integer' name='No.' ordinal='0' />
+              <column datatype='string' name='B/S' ordinal='1' />
+              <column datatype='string' name='Velocity' ordinal='2' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.0rsk3771v2o15618iilmv07j5gf8' name='20210724' table='[&apos;20210724$&apos;]' type='table'>
+            <columns gridOrigin='A1:C78:no:A1:C78:0' header='yes' outcome='6'>
+              <column datatype='integer' name='No.' ordinal='0' />
+              <column datatype='string' name='B/S' ordinal='1' />
+              <column datatype='string' name='Velocity' ordinal='2' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.0rsk3771v2o15618iilmv07j5gf8' name='20210729' table='[&apos;20210729$&apos;]' type='table'>
+            <columns gridOrigin='A1:C88:no:A1:C88:0' header='yes' outcome='6'>
+              <column datatype='integer' name='No.' ordinal='0' />
+              <column datatype='string' name='B/S' ordinal='1' />
+              <column datatype='string' name='Velocity' ordinal='2' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.0rsk3771v2o15618iilmv07j5gf8' name='20210803' table='[&apos;20210803$&apos;]' type='table'>
+            <columns gridOrigin='A1:C100:no:A1:C100:0' header='yes' outcome='6'>
+              <column datatype='integer' name='No.' ordinal='0' />
+              <column datatype='string' name='B/S' ordinal='1' />
+              <column datatype='string' name='Velocity' ordinal='2' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.0rsk3771v2o15618iilmv07j5gf8' name='20210808' table='[&apos;20210808$&apos;]' type='table'>
+            <columns gridOrigin='A1:C77:no:A1:C77:0' header='yes' outcome='6'>
+              <column datatype='integer' name='No.' ordinal='0' />
+              <column datatype='string' name='B/S' ordinal='1' />
+              <column datatype='string' name='Velocity' ordinal='2' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.0rsk3771v2o15618iilmv07j5gf8' name='20210814' table='[&apos;20210814$&apos;]' type='table'>
+            <columns gridOrigin='A1:C90:no:A1:C90:0' header='yes' outcome='6'>
+              <column datatype='integer' name='No.' ordinal='0' />
+              <column datatype='string' name='B/S' ordinal='1' />
+              <column datatype='string' name='Velocity' ordinal='2' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.0rsk3771v2o15618iilmv07j5gf8' name='20210821' table='[&apos;20210821$&apos;]' type='table'>
+            <columns gridOrigin='A1:C106:no:A1:C106:0' header='yes' outcome='6'>
+              <column datatype='integer' name='No.' ordinal='0' />
+              <column datatype='string' name='B/S' ordinal='1' />
+              <column datatype='string' name='Velocity' ordinal='2' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.0rsk3771v2o15618iilmv07j5gf8' name='20210826' table='[&apos;20210826$&apos;]' type='table'>
+            <columns gridOrigin='A1:C67:no:A1:C67:0' header='yes' outcome='6'>
+              <column datatype='integer' name='No.' ordinal='0' />
+              <column datatype='string' name='B/S' ordinal='1' />
+              <column datatype='string' name='Velocity' ordinal='2' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.0rsk3771v2o15618iilmv07j5gf8' name='20210831' table='[&apos;20210831$&apos;]' type='table'>
+            <columns gridOrigin='A1:C96:no:A1:C96:0' header='yes' outcome='6'>
+              <column datatype='integer' name='No.' ordinal='0' />
+              <column datatype='string' name='B/S' ordinal='1' />
+              <column datatype='string' name='Velocity' ordinal='2' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.0rsk3771v2o15618iilmv07j5gf8' name='20210906' table='[&apos;20210906$&apos;]' type='table'>
+            <columns gridOrigin='A1:C81:no:A1:C81:0' header='yes' outcome='6'>
+              <column datatype='integer' name='No.' ordinal='0' />
+              <column datatype='string' name='B/S' ordinal='1' />
+              <column datatype='string' name='Velocity' ordinal='2' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.0rsk3771v2o15618iilmv07j5gf8' name='20210911' table='[&apos;20210911$&apos;]' type='table'>
+            <columns gridOrigin='A1:C70:no:A1:C70:0' header='yes' outcome='6'>
+              <column datatype='integer' name='No.' ordinal='0' />
+              <column datatype='string' name='B/S' ordinal='1' />
+              <column datatype='string' name='Velocity' ordinal='2' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.0rsk3771v2o15618iilmv07j5gf8' name='20210917' table='[&apos;20210917$&apos;]' type='table'>
+            <columns gridOrigin='A1:C49:no:A1:C49:0' header='yes' outcome='6'>
+              <column datatype='integer' name='No.' ordinal='0' />
+              <column datatype='string' name='B/S' ordinal='1' />
+              <column datatype='string' name='Velocity' ordinal='2' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.0rsk3771v2o15618iilmv07j5gf8' name='20210928' table='[&apos;20210928$&apos;]' type='table'>
+            <columns gridOrigin='A1:C95:no:A1:C95:0' header='yes' outcome='6'>
+              <column datatype='integer' name='No.' ordinal='0' />
+              <column datatype='string' name='B/S' ordinal='1' />
+              <column datatype='string' name='Velocity' ordinal='2' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.0rsk3771v2o15618iilmv07j5gf8' name='20211003' table='[&apos;20211003$&apos;]' type='table'>
+            <columns gridOrigin='A1:C78:no:A1:C78:0' header='yes' outcome='6'>
+              <column datatype='integer' name='No.' ordinal='0' />
+              <column datatype='string' name='B/S' ordinal='1' />
+              <column datatype='string' name='Velocity' ordinal='2' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[20210401+]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>No.</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[No.]</local-name>
+            <parent-name>[20210401+]</parent-name>
+            <remote-alias>No.</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_E747B96C619F47FB9B0C7B4791607B1B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>B/S</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[B/S]</local-name>
+            <parent-name>[20210401+]</parent-name>
+            <remote-alias>B/S</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_E747B96C619F47FB9B0C7B4791607B1B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Velocity</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Velocity]</local-name>
+            <parent-name>[20210401+]</parent-name>
+            <remote-alias>Velocity</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_E747B96C619F47FB9B0C7B4791607B1B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sheet</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Sheet]</local-name>
+            <parent-name>[20210401+]</parent-name>
+            <remote-alias>Sheet</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_E747B96C619F47FB9B0C7B4791607B1B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Table Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Table Name]</local-name>
+            <parent-name>[20210401+]</parent-name>
+            <remote-alias>Table Name</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_E747B96C619F47FB9B0C7B4791607B1B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Type of Pitches' datatype='string' name='[Calculation_866661483208708096]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='[Velocity - 분할 3] + &apos; &apos; + [Velocity - 분할 4]' />
+      </column>
+      <column aggregation='Count' datatype='integer' name='[No.]' role='measure' type='quantitative' />
+      <column caption='Date' datatype='date' name='[Sheet]' role='dimension' type='ordinal' />
+      <column aggregation='Avg' caption='Velocity MPH' datatype='real' datatype-customized='true' name='[Velocity - 분할 1]' role='measure' type='quantitative' user:SplitFieldIndex='1' user:SplitFieldOrigin='[federated.1bev4s81v2qv1o1bwoffu0arvh4n].[Velocity]'>
+        <calculation class='tableau' formula='FLOAT(TRIM( SPLIT( [Velocity], &quot; &quot;, 1 ) ))' />
+      </column>
+      <column caption='Velocity - 분할 3' datatype='string' hidden='true' name='[Velocity - 분할 3]' role='dimension' type='nominal' user:SplitFieldIndex='3' user:SplitFieldOrigin='[federated.1bev4s81v2qv1o1bwoffu0arvh4n].[Velocity]'>
+        <calculation class='tableau' formula='TRIM( SPLIT( [Velocity], &quot; &quot;, 3 ) )' />
+      </column>
+      <column caption='Velocity - 분할 4' datatype='string' hidden='true' name='[Velocity - 분할 4]' role='dimension' type='nominal' user:SplitFieldIndex='4' user:SplitFieldOrigin='[federated.1bev4s81v2qv1o1bwoffu0arvh4n].[Velocity]'>
+        <calculation class='tableau' formula='TRIM( SPLIT( [Velocity], &quot; &quot;, 4 ) )' />
+      </column>
+      <column aggregation='None' caption='Velocity (Bins)' datatype='integer' name='[Velocity MPH(구간차원)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='0' formula='[Velocity - 분할 1]' peg='0' size='1' />
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='20210401+' datatype='table' name='[__tableau_internal_object_id__].[_E747B96C619F47FB9B0C7B4791607B1B]' role='measure' type='quantitative' />
+      <column-instance column='[Calculation_866661483208708096]' derivation='None' name='[none:Calculation_866661483208708096:nk]' pivot='key' type='nominal' />
+      <group caption='동작(Type of Pitches)' hidden='true' name='[Action (Type of Pitches)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Calculation_866661483208708096]' />
+        </groupfilter>
+      </group>
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='ko_KR' class='hyper' dbname='C:/Users/dalgo/Desktop/Github/SQL_Tableau_Study/TWBX 커뮤니티 3기/03일차/20210401+(류현진 경기일정_MLB 2021).hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='10/20/2021 05:17:10 AM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh>
+            <refresh-event add-from-file-path='20210401+(류현진 경기일정_MLB 2021)' increment-value='%null%' refresh-type='create' rows-inserted='2690' timestamp-start='2021-10-20 05:17:09.578' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>No.</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[No.]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>No.</remote-alias>
+              <ordinal>0</ordinal>
+              <family>20210401+</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>108</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_E747B96C619F47FB9B0C7B4791607B1B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>B/S</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[B/S]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>B/S</remote-alias>
+              <ordinal>1</ordinal>
+              <family>20210401+</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_E747B96C619F47FB9B0C7B4791607B1B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Velocity</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Velocity]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Velocity</remote-alias>
+              <ordinal>2</ordinal>
+              <family>20210401+</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>352</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_E747B96C619F47FB9B0C7B4791607B1B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Sheet</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Sheet]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Sheet</remote-alias>
+              <ordinal>3</ordinal>
+              <family>20210401+</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>31</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_E747B96C619F47FB9B0C7B4791607B1B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Table Name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Table Name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Table Name</remote-alias>
+              <ordinal>4</ordinal>
+              <family>20210401+</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>31</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_E747B96C619F47FB9B0C7B4791607B1B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Calculation_866661483208708096:nk]' type='palette'>
+            <map to='#76b7b2'>
+              <bucket>&quot;Curveball &quot;</bucket>
+            </map>
+            <map to='#9d9b3d'>
+              <bucket>&quot;Sinker &quot;</bucket>
+            </map>
+            <map to='#b9a0b4'>
+              <bucket>&quot;Slider &quot;</bucket>
+            </map>
+            <map to='#bab2ae'>
+              <bucket>&quot;Changeup &quot;</bucket>
+            </map>
+            <map to='#dab6af'>
+              <bucket>&quot;Cutter &quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Four-Seam Fastball&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;대한민국&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='20210401+' id='_E747B96C619F47FB9B0C7B4791607B1B'>
+            <properties context=''>
+              <relation all='true' name='20210401+' type='union'>
+                <columns header='yes'>
+                  <column datatype='integer' name='No.' />
+                  <column datatype='string' name='B/S' />
+                  <column datatype='string' name='Velocity' />
+                  <column datatype='date' date-parse-format='yyyyMMdd' name='Sheet' />
+                  <column datatype='string' name='Table Name' />
+                </columns>
+                <relation connection='excel-direct.0rsk3771v2o15618iilmv07j5gf8' name='20210401' table='[&apos;20210401$&apos;]' type='table'>
+                  <columns gridOrigin='A1:C93:no:A1:C93:0' header='yes' outcome='6'>
+                    <column datatype='integer' name='No.' ordinal='0' />
+                    <column datatype='string' name='B/S' ordinal='1' />
+                    <column datatype='string' name='Velocity' ordinal='2' />
+                  </columns>
+                </relation>
+                <relation connection='excel-direct.0rsk3771v2o15618iilmv07j5gf8' name='20210407' table='[&apos;20210407$&apos;]' type='table'>
+                  <columns gridOrigin='A1:C91:no:A1:C91:0' header='yes' outcome='6'>
+                    <column datatype='integer' name='No.' ordinal='0' />
+                    <column datatype='string' name='B/S' ordinal='1' />
+                    <column datatype='string' name='Velocity' ordinal='2' />
+                  </columns>
+                </relation>
+                <relation connection='excel-direct.0rsk3771v2o15618iilmv07j5gf8' name='20210413' table='[&apos;20210413$&apos;]' type='table'>
+                  <columns gridOrigin='A1:C96:no:A1:C96:0' header='yes' outcome='6'>
+                    <column datatype='integer' name='No.' ordinal='0' />
+                    <column datatype='string' name='B/S' ordinal='1' />
+                    <column datatype='string' name='Velocity' ordinal='2' />
+                  </columns>
+                </relation>
+                <relation connection='excel-direct.0rsk3771v2o15618iilmv07j5gf8' name='20210420' table='[&apos;20210420$&apos;]' type='table'>
+                  <columns gridOrigin='A1:C84:no:A1:C84:0' header='yes' outcome='6'>
+                    <column datatype='integer' name='No.' ordinal='0' />
+                    <column datatype='string' name='B/S' ordinal='1' />
+                    <column datatype='string' name='Velocity' ordinal='2' />
+                  </columns>
+                </relation>
+                <relation connection='excel-direct.0rsk3771v2o15618iilmv07j5gf8' name='20210425' table='[&apos;20210425$&apos;]' type='table'>
+                  <columns gridOrigin='A1:C63:no:A1:C63:0' header='yes' outcome='6'>
+                    <column datatype='integer' name='No.' ordinal='0' />
+                    <column datatype='string' name='B/S' ordinal='1' />
+                    <column datatype='string' name='Velocity' ordinal='2' />
+                  </columns>
+                </relation>
+                <relation connection='excel-direct.0rsk3771v2o15618iilmv07j5gf8' name='20210506' table='[&apos;20210506$&apos;]' type='table'>
+                  <columns gridOrigin='A1:C92:no:A1:C92:0' header='yes' outcome='6'>
+                    <column datatype='integer' name='No.' ordinal='0' />
+                    <column datatype='string' name='B/S' ordinal='1' />
+                    <column datatype='string' name='Velocity' ordinal='2' />
+                  </columns>
+                </relation>
+                <relation connection='excel-direct.0rsk3771v2o15618iilmv07j5gf8' name='20210512' table='[&apos;20210512$&apos;]' type='table'>
+                  <columns gridOrigin='A1:C95:no:A1:C95:0' header='yes' outcome='6'>
+                    <column datatype='integer' name='No.' ordinal='0' />
+                    <column datatype='string' name='B/S' ordinal='1' />
+                    <column datatype='string' name='Velocity' ordinal='2' />
+                  </columns>
+                </relation>
+                <relation connection='excel-direct.0rsk3771v2o15618iilmv07j5gf8' name='20210518' table='[&apos;20210518$&apos;]' type='table'>
+                  <columns gridOrigin='A1:C101:no:A1:C101:0' header='yes' outcome='6'>
+                    <column datatype='integer' name='No.' ordinal='0' />
+                    <column datatype='string' name='B/S' ordinal='1' />
+                    <column datatype='string' name='Velocity' ordinal='2' />
+                  </columns>
+                </relation>
+                <relation connection='excel-direct.0rsk3771v2o15618iilmv07j5gf8' name='20210523' table='[&apos;20210523$&apos;]' type='table'>
+                  <columns gridOrigin='A1:C108:no:A1:C108:0' header='yes' outcome='6'>
+                    <column datatype='integer' name='No.' ordinal='0' />
+                    <column datatype='string' name='B/S' ordinal='1' />
+                    <column datatype='string' name='Velocity' ordinal='2' />
+                  </columns>
+                </relation>
+                <relation connection='excel-direct.0rsk3771v2o15618iilmv07j5gf8' name='20210528' table='[&apos;20210528$&apos;]' type='table'>
+                  <columns gridOrigin='A1:C92:no:A1:C92:0' header='yes' outcome='6'>
+                    <column datatype='integer' name='No.' ordinal='0' />
+                    <column datatype='string' name='B/S' ordinal='1' />
+                    <column datatype='string' name='Velocity' ordinal='2' />
+                  </columns>
+                </relation>
+                <relation connection='excel-direct.0rsk3771v2o15618iilmv07j5gf8' name='20210604' table='[&apos;20210604$&apos;]' type='table'>
+                  <columns gridOrigin='A1:C92:no:A1:C92:0' header='yes' outcome='6'>
+                    <column datatype='integer' name='No.' ordinal='0' />
+                    <column datatype='string' name='B/S' ordinal='1' />
+                    <column datatype='string' name='Velocity' ordinal='2' />
+                  </columns>
+                </relation>
+                <relation connection='excel-direct.0rsk3771v2o15618iilmv07j5gf8' name='20210610' table='[&apos;20210610$&apos;]' type='table'>
+                  <columns gridOrigin='A1:C96:no:A1:C96:0' header='yes' outcome='6'>
+                    <column datatype='integer' name='No.' ordinal='0' />
+                    <column datatype='string' name='B/S' ordinal='1' />
+                    <column datatype='string' name='Velocity' ordinal='2' />
+                  </columns>
+                </relation>
+                <relation connection='excel-direct.0rsk3771v2o15618iilmv07j5gf8' name='20210615' table='[&apos;20210615$&apos;]' type='table'>
+                  <columns gridOrigin='A1:C93:no:A1:C93:0' header='yes' outcome='6'>
+                    <column datatype='integer' name='No.' ordinal='0' />
+                    <column datatype='string' name='B/S' ordinal='1' />
+                    <column datatype='string' name='Velocity' ordinal='2' />
+                  </columns>
+                </relation>
+                <relation connection='excel-direct.0rsk3771v2o15618iilmv07j5gf8' name='20210620' table='[&apos;20210620$&apos;]' type='table'>
+                  <columns gridOrigin='A1:C101:no:A1:C101:0' header='yes' outcome='6'>
+                    <column datatype='integer' name='No.' ordinal='0' />
+                    <column datatype='string' name='B/S' ordinal='1' />
+                    <column datatype='string' name='Velocity' ordinal='2' />
+                  </columns>
+                </relation>
+                <relation connection='excel-direct.0rsk3771v2o15618iilmv07j5gf8' name='20210626' table='[&apos;20210626$&apos;]' type='table'>
+                  <columns gridOrigin='A1:C92:no:A1:C92:0' header='yes' outcome='6'>
+                    <column datatype='integer' name='No.' ordinal='0' />
+                    <column datatype='string' name='B/S' ordinal='1' />
+                    <column datatype='string' name='Velocity' ordinal='2' />
+                  </columns>
+                </relation>
+                <relation connection='excel-direct.0rsk3771v2o15618iilmv07j5gf8' name='20210701' table='[&apos;20210701$&apos;]' type='table'>
+                  <columns gridOrigin='A1:C86:no:A1:C86:0' header='yes' outcome='6'>
+                    <column datatype='integer' name='No.' ordinal='0' />
+                    <column datatype='string' name='B/S' ordinal='1' />
+                    <column datatype='string' name='Velocity' ordinal='2' />
+                  </columns>
+                </relation>
+                <relation connection='excel-direct.0rsk3771v2o15618iilmv07j5gf8' name='20210707' table='[&apos;20210707$&apos;]' type='table'>
+                  <columns gridOrigin='A1:C87:no:A1:C87:0' header='yes' outcome='6'>
+                    <column datatype='integer' name='No.' ordinal='0' />
+                    <column datatype='string' name='B/S' ordinal='1' />
+                    <column datatype='string' name='Velocity' ordinal='2' />
+                  </columns>
+                </relation>
+                <relation connection='excel-direct.0rsk3771v2o15618iilmv07j5gf8' name='20210718' table='[&apos;20210718$&apos;]' type='table'>
+                  <columns gridOrigin='A1:C84:no:A1:C84:0' header='yes' outcome='6'>
+                    <column datatype='integer' name='No.' ordinal='0' />
+                    <column datatype='string' name='B/S' ordinal='1' />
+                    <column datatype='string' name='Velocity' ordinal='2' />
+                  </columns>
+                </relation>
+                <relation connection='excel-direct.0rsk3771v2o15618iilmv07j5gf8' name='20210724' table='[&apos;20210724$&apos;]' type='table'>
+                  <columns gridOrigin='A1:C78:no:A1:C78:0' header='yes' outcome='6'>
+                    <column datatype='integer' name='No.' ordinal='0' />
+                    <column datatype='string' name='B/S' ordinal='1' />
+                    <column datatype='string' name='Velocity' ordinal='2' />
+                  </columns>
+                </relation>
+                <relation connection='excel-direct.0rsk3771v2o15618iilmv07j5gf8' name='20210729' table='[&apos;20210729$&apos;]' type='table'>
+                  <columns gridOrigin='A1:C88:no:A1:C88:0' header='yes' outcome='6'>
+                    <column datatype='integer' name='No.' ordinal='0' />
+                    <column datatype='string' name='B/S' ordinal='1' />
+                    <column datatype='string' name='Velocity' ordinal='2' />
+                  </columns>
+                </relation>
+                <relation connection='excel-direct.0rsk3771v2o15618iilmv07j5gf8' name='20210803' table='[&apos;20210803$&apos;]' type='table'>
+                  <columns gridOrigin='A1:C100:no:A1:C100:0' header='yes' outcome='6'>
+                    <column datatype='integer' name='No.' ordinal='0' />
+                    <column datatype='string' name='B/S' ordinal='1' />
+                    <column datatype='string' name='Velocity' ordinal='2' />
+                  </columns>
+                </relation>
+                <relation connection='excel-direct.0rsk3771v2o15618iilmv07j5gf8' name='20210808' table='[&apos;20210808$&apos;]' type='table'>
+                  <columns gridOrigin='A1:C77:no:A1:C77:0' header='yes' outcome='6'>
+                    <column datatype='integer' name='No.' ordinal='0' />
+                    <column datatype='string' name='B/S' ordinal='1' />
+                    <column datatype='string' name='Velocity' ordinal='2' />
+                  </columns>
+                </relation>
+                <relation connection='excel-direct.0rsk3771v2o15618iilmv07j5gf8' name='20210814' table='[&apos;20210814$&apos;]' type='table'>
+                  <columns gridOrigin='A1:C90:no:A1:C90:0' header='yes' outcome='6'>
+                    <column datatype='integer' name='No.' ordinal='0' />
+                    <column datatype='string' name='B/S' ordinal='1' />
+                    <column datatype='string' name='Velocity' ordinal='2' />
+                  </columns>
+                </relation>
+                <relation connection='excel-direct.0rsk3771v2o15618iilmv07j5gf8' name='20210821' table='[&apos;20210821$&apos;]' type='table'>
+                  <columns gridOrigin='A1:C106:no:A1:C106:0' header='yes' outcome='6'>
+                    <column datatype='integer' name='No.' ordinal='0' />
+                    <column datatype='string' name='B/S' ordinal='1' />
+                    <column datatype='string' name='Velocity' ordinal='2' />
+                  </columns>
+                </relation>
+                <relation connection='excel-direct.0rsk3771v2o15618iilmv07j5gf8' name='20210826' table='[&apos;20210826$&apos;]' type='table'>
+                  <columns gridOrigin='A1:C67:no:A1:C67:0' header='yes' outcome='6'>
+                    <column datatype='integer' name='No.' ordinal='0' />
+                    <column datatype='string' name='B/S' ordinal='1' />
+                    <column datatype='string' name='Velocity' ordinal='2' />
+                  </columns>
+                </relation>
+                <relation connection='excel-direct.0rsk3771v2o15618iilmv07j5gf8' name='20210831' table='[&apos;20210831$&apos;]' type='table'>
+                  <columns gridOrigin='A1:C96:no:A1:C96:0' header='yes' outcome='6'>
+                    <column datatype='integer' name='No.' ordinal='0' />
+                    <column datatype='string' name='B/S' ordinal='1' />
+                    <column datatype='string' name='Velocity' ordinal='2' />
+                  </columns>
+                </relation>
+                <relation connection='excel-direct.0rsk3771v2o15618iilmv07j5gf8' name='20210906' table='[&apos;20210906$&apos;]' type='table'>
+                  <columns gridOrigin='A1:C81:no:A1:C81:0' header='yes' outcome='6'>
+                    <column datatype='integer' name='No.' ordinal='0' />
+                    <column datatype='string' name='B/S' ordinal='1' />
+                    <column datatype='string' name='Velocity' ordinal='2' />
+                  </columns>
+                </relation>
+                <relation connection='excel-direct.0rsk3771v2o15618iilmv07j5gf8' name='20210911' table='[&apos;20210911$&apos;]' type='table'>
+                  <columns gridOrigin='A1:C70:no:A1:C70:0' header='yes' outcome='6'>
+                    <column datatype='integer' name='No.' ordinal='0' />
+                    <column datatype='string' name='B/S' ordinal='1' />
+                    <column datatype='string' name='Velocity' ordinal='2' />
+                  </columns>
+                </relation>
+                <relation connection='excel-direct.0rsk3771v2o15618iilmv07j5gf8' name='20210917' table='[&apos;20210917$&apos;]' type='table'>
+                  <columns gridOrigin='A1:C49:no:A1:C49:0' header='yes' outcome='6'>
+                    <column datatype='integer' name='No.' ordinal='0' />
+                    <column datatype='string' name='B/S' ordinal='1' />
+                    <column datatype='string' name='Velocity' ordinal='2' />
+                  </columns>
+                </relation>
+                <relation connection='excel-direct.0rsk3771v2o15618iilmv07j5gf8' name='20210928' table='[&apos;20210928$&apos;]' type='table'>
+                  <columns gridOrigin='A1:C95:no:A1:C95:0' header='yes' outcome='6'>
+                    <column datatype='integer' name='No.' ordinal='0' />
+                    <column datatype='string' name='B/S' ordinal='1' />
+                    <column datatype='string' name='Velocity' ordinal='2' />
+                  </columns>
+                </relation>
+                <relation connection='excel-direct.0rsk3771v2o15618iilmv07j5gf8' name='20211003' table='[&apos;20211003$&apos;]' type='table'>
+                  <columns gridOrigin='A1:C78:no:A1:C78:0' header='yes' outcome='6'>
+                    <column datatype='integer' name='No.' ordinal='0' />
+                    <column datatype='string' name='B/S' ordinal='1' />
+                    <column datatype='string' name='Velocity' ordinal='2' />
+                  </columns>
+                </relation>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <shared-views>
+    <shared-view name='federated.1bev4s81v2qv1o1bwoffu0arvh4n'>
+      <datasources>
+        <datasource caption='20210401+(류현진 경기일정_MLB 2021)' name='federated.1bev4s81v2qv1o1bwoffu0arvh4n' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1bev4s81v2qv1o1bwoffu0arvh4n'>
+        <column caption='Date' datatype='date' name='[Sheet]' role='dimension' type='ordinal' />
+        <column-instance column='[Sheet]' derivation='None' name='[none:Sheet:ok]' pivot='key' type='ordinal' />
+      </datasource-dependencies>
+      <filter class='categorical' column='[federated.1bev4s81v2qv1o1bwoffu0arvh4n].[none:Sheet:ok]'>
+        <groupfilter function='member' level='[none:Sheet:ok]' member='#2021-10-03#' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+        <preset type='last-values' />
+        <target field='[federated.1bev4s81v2qv1o1bwoffu0arvh4n].[none:Sheet:ok]' />
+      </filter>
+    </shared-view>
+  </shared-views>
+  <actions>
+    <action caption='Type of Pitches 필터' name='[Action1_698141AA735B4F36B03E4D9A9D486B30]'>
+      <activation auto-clear='true' type='on-hover' />
+      <source dashboard='Hyun Jin Ryu #99' type='sheet' worksheet='Percent of Total' />
+      <link caption='Type of Pitches 필터' delimiter=',' escape='\' expression='tsl:Hyun%20Jin%20Ryu%20%2399?%5Bfederated.1bev4s81v2qv1o1bwoffu0arvh4n%5D.%5BCalculation_866661483208708096%5D~s0=&lt;[federated.1bev4s81v2qv1o1bwoffu0arvh4n].[Calculation_866661483208708096]~na&gt;' include-null='true' multi-select='true' url-escape='true' />
+      <command command='tsc:tsl-filter'>
+        <param name='exclude' value='Percent of Total' />
+        <param name='target' value='Hyun Jin Ryu #99' />
+      </command>
+    </action>
+    <datasources>
+      <datasource caption='20210401+(류현진 경기일정_MLB 2021)' name='federated.1bev4s81v2qv1o1bwoffu0arvh4n' />
+    </datasources>
+    <datasource-dependencies datasource='federated.1bev4s81v2qv1o1bwoffu0arvh4n'>
+      <column caption='Type of Pitches' datatype='string' name='[Calculation_866661483208708096]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='[Velocity - 분할 3] + &apos; &apos; + [Velocity - 분할 4]' />
+      </column>
+    </datasource-dependencies>
+  </actions>
+  <worksheets>
+    <worksheet name='Percent of Total'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontname='Bahnschrift Light SemiCondensed' fontsize='12'><![CDATA[Percent of Total (<[federated.1bev4s81v2qv1o1bwoffu0arvh4n].[none:Sheet:ok]>)]]></run>
+            <run fontalignment='1' fontname='나눔스퀘어라운드 Bold,나눔스퀘어라운드' fontsize='18'>Æ </run>
+            <run fontalignment='1' fontname='나눔스퀘어라운드 Bold,나눔스퀘어라운드' fontsize='17'>Æ  </run>
+            <run fontalignment='1' fontname='Bahnschrift Light SemiCondensed' fontsize='9'>#hover over to see the details</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='20210401+(류현진 경기일정_MLB 2021)' name='federated.1bev4s81v2qv1o1bwoffu0arvh4n' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1bev4s81v2qv1o1bwoffu0arvh4n'>
+            <column caption='Type of Pitches' datatype='string' name='[Calculation_866661483208708096]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='[Velocity - 분할 3] + &apos; &apos; + [Velocity - 분할 4]' />
+            </column>
+            <column aggregation='Count' datatype='integer' name='[No.]' role='measure' type='quantitative' />
+            <column caption='Date' datatype='date' name='[Sheet]' role='dimension' type='ordinal' />
+            <column caption='Velocity - 분할 3' datatype='string' hidden='true' name='[Velocity - 분할 3]' role='dimension' type='nominal' user:SplitFieldIndex='3' user:SplitFieldOrigin='[federated.1bev4s81v2qv1o1bwoffu0arvh4n].[Velocity]'>
+              <calculation class='tableau' formula='TRIM( SPLIT( [Velocity], &quot; &quot;, 3 ) )' />
+            </column>
+            <column caption='Velocity - 분할 4' datatype='string' hidden='true' name='[Velocity - 분할 4]' role='dimension' type='nominal' user:SplitFieldIndex='4' user:SplitFieldOrigin='[federated.1bev4s81v2qv1o1bwoffu0arvh4n].[Velocity]'>
+              <calculation class='tableau' formula='TRIM( SPLIT( [Velocity], &quot; &quot;, 4 ) )' />
+            </column>
+            <column datatype='string' name='[Velocity]' role='dimension' type='nominal' />
+            <column-instance column='[No.]' derivation='Count' name='[cnt:No.:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_866661483208708096]' derivation='None' name='[none:Calculation_866661483208708096:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Sheet]' derivation='None' name='[none:Sheet:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <manual-sort column='[federated.1bev4s81v2qv1o1bwoffu0arvh4n].[none:Calculation_866661483208708096:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>%all%</bucket>
+              <bucket>&quot;Slider &quot;</bucket>
+              <bucket>&quot;Sinker &quot;</bucket>
+              <bucket>&quot;Curveball &quot;</bucket>
+              <bucket>&quot;Cutter &quot;</bucket>
+              <bucket>&quot;Changeup &quot;</bucket>
+              <bucket>&quot;Four-Seam Fastball&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.1bev4s81v2qv1o1bwoffu0arvh4n].[none:Sheet:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.1bev4s81v2qv1o1bwoffu0arvh4n].[cnt:No.:qk]' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-width' value='0' />
+            <format attr='border-style' value='none' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-family' scope='cols' value='Bahnschrift Light SemiCondensed' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='legend'>
+            <format attr='col-width' field='[federated.1bev4s81v2qv1o1bwoffu0arvh4n].[none:Calculation_866661483208708096:nk]' value='160' />
+            <format attr='font-family' value='Bahnschrift Light SemiCondensed' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='title' field='[federated.1bev4s81v2qv1o1bwoffu0arvh4n].[none:Sheet:ok]' value='Date' />
+            <format attr='font-family' value='Bahnschrift Light SemiCondensed' />
+          </style-rule>
+          <style-rule element='quick-filter-title'>
+            <format attr='text-align' value='center' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1bev4s81v2qv1o1bwoffu0arvh4n].[none:Calculation_866661483208708096:nk]' />
+              <text column='[federated.1bev4s81v2qv1o1bwoffu0arvh4n].[cnt:No.:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Type of Pitches:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1bev4s81v2qv1o1bwoffu0arvh4n].[none:Calculation_866661483208708096:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Count:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1bev4s81v2qv1o1bwoffu0arvh4n].[cnt:No.:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='cell'>
+                <format attr='vertical-align' value='center' />
+                <format attr='text-align' value='left' />
+              </style-rule>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-family' value='Bahnschrift Light SemiCondensed' />
+                <format attr='font-size' value='8' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#ffffff' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols>[federated.1bev4s81v2qv1o1bwoffu0arvh4n].[cnt:No.:qk]</cols>
+      </table>
+      <simple-id uuid='{06596077-A5D0-49CE-A104-8F2DA24FD395}' />
+    </worksheet>
+    <worksheet name='Type of Pitches &amp; Velocity'>
+      <layout-options>
+        <title>
+          <formatted-text />
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='20210401+(류현진 경기일정_MLB 2021)' name='federated.1bev4s81v2qv1o1bwoffu0arvh4n' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1bev4s81v2qv1o1bwoffu0arvh4n'>
+            <column caption='Type of Pitches' datatype='string' name='[Calculation_866661483208708096]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='[Velocity - 분할 3] + &apos; &apos; + [Velocity - 분할 4]' />
+            </column>
+            <column aggregation='Count' datatype='integer' name='[No.]' role='measure' type='quantitative' />
+            <column caption='Date' datatype='date' name='[Sheet]' role='dimension' type='ordinal' />
+            <column aggregation='Avg' caption='Velocity MPH' datatype='real' datatype-customized='true' name='[Velocity - 분할 1]' role='measure' type='quantitative' user:SplitFieldIndex='1' user:SplitFieldOrigin='[federated.1bev4s81v2qv1o1bwoffu0arvh4n].[Velocity]'>
+              <calculation class='tableau' formula='FLOAT(TRIM( SPLIT( [Velocity], &quot; &quot;, 1 ) ))' />
+            </column>
+            <column caption='Velocity - 분할 3' datatype='string' hidden='true' name='[Velocity - 분할 3]' role='dimension' type='nominal' user:SplitFieldIndex='3' user:SplitFieldOrigin='[federated.1bev4s81v2qv1o1bwoffu0arvh4n].[Velocity]'>
+              <calculation class='tableau' formula='TRIM( SPLIT( [Velocity], &quot; &quot;, 3 ) )' />
+            </column>
+            <column caption='Velocity - 분할 4' datatype='string' hidden='true' name='[Velocity - 분할 4]' role='dimension' type='nominal' user:SplitFieldIndex='4' user:SplitFieldOrigin='[federated.1bev4s81v2qv1o1bwoffu0arvh4n].[Velocity]'>
+              <calculation class='tableau' formula='TRIM( SPLIT( [Velocity], &quot; &quot;, 4 ) )' />
+            </column>
+            <column aggregation='None' caption='Velocity (Bins)' datatype='integer' name='[Velocity MPH(구간차원)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='0' formula='[Velocity - 분할 1]' peg='0' size='1' />
+            </column>
+            <column datatype='string' name='[Velocity]' role='dimension' type='nominal' />
+            <column-instance column='[No.]' derivation='Count' name='[cnt:No.:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_866661483208708096]' derivation='None' name='[none:Calculation_866661483208708096:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Sheet]' derivation='None' name='[none:Sheet:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Velocity MPH(구간차원)]' derivation='None' name='[none:Velocity MPH(구간차원):ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1bev4s81v2qv1o1bwoffu0arvh4n].[Action (Type of Pitches)]'>
+            <groupfilter function='level-members' level='[Calculation_866661483208708096]' user:ui-action-filter='[Action1_698141AA735B4F36B03E4D9A9D486B30]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <manual-sort column='[federated.1bev4s81v2qv1o1bwoffu0arvh4n].[none:Calculation_866661483208708096:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Curveball &quot;</bucket>
+              <bucket>&quot;Changeup &quot;</bucket>
+              <bucket>&quot;Cutter &quot;</bucket>
+              <bucket>&quot;Four-Seam Fastball&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <_.fcp.SingleValuePerNestSorting.true...single-value-per-nest-shelf-sorts>
+            <single-value-per-nest-shelf-sort dimension-to-sort='[federated.1bev4s81v2qv1o1bwoffu0arvh4n].[none:Velocity MPH(구간차원):ok]' direction='ASC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1bev4s81v2qv1o1bwoffu0arvh4n].[none:Velocity MPH(구간차원):ok]' shelf='rows' />
+          </_.fcp.SingleValuePerNestSorting.true...single-value-per-nest-shelf-sorts>
+          <slices>
+            <column>[federated.1bev4s81v2qv1o1bwoffu0arvh4n].[none:Sheet:ok]</column>
+            <column>[federated.1bev4s81v2qv1o1bwoffu0arvh4n].[Action (Type of Pitches)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.1bev4s81v2qv1o1bwoffu0arvh4n].[cnt:No.:qk]' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.1bev4s81v2qv1o1bwoffu0arvh4n].[none:Calculation_866661483208708096:nk]' value='128' />
+            <format attr='width' field='[federated.1bev4s81v2qv1o1bwoffu0arvh4n].[none:Velocity MPH(구간차원):ok]' value='132' />
+          </style-rule>
+          <style-rule element='field-labels'>
+            <format attr='font-family' value='Bahnschrift Light SemiCondensed' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-align' field='[federated.1bev4s81v2qv1o1bwoffu0arvh4n].[none:Velocity MPH(구간차원):ok]' value='center' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-family' value='Bahnschrift Light SemiCondensed' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1bev4s81v2qv1o1bwoffu0arvh4n].[none:Calculation_866661483208708096:nk]' />
+              <text column='[federated.1bev4s81v2qv1o1bwoffu0arvh4n].[cnt:No.:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Type of Pitches:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1bev4s81v2qv1o1bwoffu0arvh4n].[none:Calculation_866661483208708096:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Velocity (Bins):&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1bev4s81v2qv1o1bwoffu0arvh4n].[none:Velocity MPH(구간차원):ok]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Count:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1bev4s81v2qv1o1bwoffu0arvh4n].[cnt:No.:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-size' value='8' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1bev4s81v2qv1o1bwoffu0arvh4n].[none:Calculation_866661483208708096:nk] / [federated.1bev4s81v2qv1o1bwoffu0arvh4n].[none:Velocity MPH(구간차원):ok])</rows>
+        <cols>[federated.1bev4s81v2qv1o1bwoffu0arvh4n].[cnt:No.:qk]</cols>
+        <show-full-range>
+          <column>[federated.1bev4s81v2qv1o1bwoffu0arvh4n].[Velocity MPH(구간차원)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{60405DFF-D9B3-4898-BF70-83F80F24C7C7}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Hyun Jin Ryu #99'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontname='Bahnschrift SemiBold'>Hyun Jin Ryu #99</run>
+            <run fontalignment='1'>Æ&#10;</run>
+            <run fontalignment='1' fontname='Bahnschrift Light SemiCondensed' fontsize='9'>Type of Pitches &amp; Velocity </run>
+            <run fontalignment='1' fontcolor='#79706e' fontname='Bahnschrift Light SemiCondensed' fontsize='9'>MLB 2021</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style>
+        <style-rule element='table'>
+          <format attr='background-color' value='#ffffff' />
+        </style-rule>
+        <style-rule element='dash-title'>
+          <format attr='background-color' value='#00000000' />
+          <format attr='border-width' value='0' />
+          <format attr='border-style' value='none' />
+        </style-rule>
+        <style-rule element='dash-subtitle'>
+          <format attr='background-color' value='#00000000' />
+        </style-rule>
+      </style>
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' sizing-mode='fixed' />
+      <datasources>
+        <datasource caption='20210401+(류현진 경기일정_MLB 2021)' name='federated.1bev4s81v2qv1o1bwoffu0arvh4n' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1bev4s81v2qv1o1bwoffu0arvh4n'>
+        <column caption='Date' datatype='date' name='[Sheet]' role='dimension' type='ordinal' />
+        <column-instance column='[Sheet]' derivation='None' name='[none:Sheet:ok]' pivot='key' type='ordinal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='15' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='10875' id='16' type-v2='title' w='98400' x='800' y='1000'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+                <format attr='margin-top' value='10' />
+                <format attr='margin-bottom' value='15' />
+              </zone-style>
+            </zone>
+            <zone h='87125' id='13' type-v2='layout-basic' w='98400' x='800' y='11875'>
+              <zone h='82934' id='7' param='horz' type-v2='layout-flow' w='98400' x='800' y='16066'>
+                <zone h='82934' id='5' type-v2='layout-basic' w='98400' x='800' y='16066'>
+                  <zone h='11246' id='3' name='Percent of Total' w='98400' x='800' y='16066'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='71688' id='9' name='Type of Pitches &amp; Velocity' w='98400' x='800' y='27312'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+              </zone>
+              <zone h='4191' id='10' param='horz' type-v2='layout-flow' w='98400' x='800' y='11875'>
+                <zone fixed-size='866' h='4191' id='8' is-fixed='true' name='Percent of Total' pane-specification-id='0' param='[federated.1bev4s81v2qv1o1bwoffu0arvh4n].[none:Calculation_866661483208708096:nk]' show-title='false' type-v2='color' w='98400' x='800' y='11875'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='6500' id='25' mode='dropdown' name='Percent of Total' param='[federated.1bev4s81v2qv1o1bwoffu0arvh4n].[none:Sheet:ok]' type-v2='filter' values='database' w='24000' x='73200' y='2750' />
+        <zone forceUpdate='true' h='4375' id='30' type-v2='text' w='12100' x='79000' y='11125'>
+          <formatted-text>
+            <run fontalignment='1' fontname='Bahnschrift Light SemiCondensed' fontsize='8'>source : mlb.com</run>
+          </formatted-text>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run fontalignment='1' fontname='Bahnschrift SemiBold'>Hyun Jin Ryu #99</run>
+                <run fontalignment='1'>Æ&#10;</run>
+                <run fontalignment='1' fontname='Bahnschrift Light SemiCondensed' fontsize='9'>Type of Pitches &amp; Velocity </run>
+                <run fontalignment='1' fontcolor='#79706e' fontname='Bahnschrift Light SemiCondensed' fontsize='9'>MLB 2021</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='44' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='43' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone h='10875' id='16' type-v2='title' w='98400' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='4375' id='30' type-v2='text' w='12100' x='79000' y='11125'>
+                  <formatted-text>
+                    <run fontalignment='1' fontname='Bahnschrift Light SemiCondensed' fontsize='8'>source : mlb.com</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='6500' id='25' mode='dropdown' name='Percent of Total' param='[federated.1bev4s81v2qv1o1bwoffu0arvh4n].[none:Sheet:ok]' type-v2='filter' values='database' w='24000' x='73200' y='2750'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='81' h='11246' id='3' is-fixed='true' name='Percent of Total' w='98400' x='800' y='16066'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='866' h='4191' id='8' name='Percent of Total' pane-specification-id='0' param='[federated.1bev4s81v2qv1o1bwoffu0arvh4n].[none:Calculation_866661483208708096:nk]' show-title='false' type-v2='color' w='98400' x='800' y='11875'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='71688' id='9' is-fixed='true' name='Type of Pitches &amp; Velocity' w='98400' x='800' y='27312'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{BEF0F170-E489-4162-947F-D07454C2D34D}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.5' source-height='44'>
+    <window class='dashboard' maximized='true' name='Hyun Jin Ryu #99'>
+      <viewpoints>
+        <viewpoint name='Percent of Total'>
+          <zoom type='entire-view' />
+          <highlight field='[federated.1bev4s81v2qv1o1bwoffu0arvh4n].[none:Calculation_866661483208708096:nk]'>
+            <bucket-selection />
+          </highlight>
+        </viewpoint>
+        <viewpoint name='Type of Pitches &amp; Velocity'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{9F8946D9-80C2-4436-8F2E-F777AEEAF128}' />
+    </window>
+    <window class='worksheet' name='Percent of Total'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='checkdropdown' param='[federated.1bev4s81v2qv1o1bwoffu0arvh4n].[none:Sheet:ok]' type='filter' />
+            <card pane-specification-id='0' param='[federated.1bev4s81v2qv1o1bwoffu0arvh4n].[none:Calculation_866661483208708096:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1bev4s81v2qv1o1bwoffu0arvh4n].[md:Sheet:ok]</field>
+            <field>[federated.1bev4s81v2qv1o1bwoffu0arvh4n].[none:Calculation_866661483208708096:nk]</field>
+            <field>[federated.1bev4s81v2qv1o1bwoffu0arvh4n].[none:Sheet:ok]</field>
+            <field>[federated.1bev4s81v2qv1o1bwoffu0arvh4n].[none:Velocity:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{FA1235EF-88BA-494D-B25F-68DD77C6C978}' />
+    </window>
+    <window class='worksheet' name='Type of Pitches &amp; Velocity'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1bev4s81v2qv1o1bwoffu0arvh4n].[none:Calculation_866661483208708096:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1bev4s81v2qv1o1bwoffu0arvh4n].[:Measure Names]</field>
+            <field>[federated.1bev4s81v2qv1o1bwoffu0arvh4n].[md:Sheet:ok]</field>
+            <field>[federated.1bev4s81v2qv1o1bwoffu0arvh4n].[none:Calculation_866661483208708096:nk]</field>
+            <field>[federated.1bev4s81v2qv1o1bwoffu0arvh4n].[none:Sheet:ok]</field>
+            <field>[federated.1bev4s81v2qv1o1bwoffu0arvh4n].[none:Velocity MPH(구간차원):ok]</field>
+            <field>[federated.1bev4s81v2qv1o1bwoffu0arvh4n].[none:Velocity:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{978447FC-6AE6-4EA2-8199-BB3BD50C2617}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Hyun Jin Ryu #99' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Percent of Total' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABYlAAAWJQFJUiTw
+      AAAD70lEQVR4nO3c3WpcVRzG4f+eD9Jq6hcU1DQEVFoQ1CO9Ak+8S70li0JBCo1QrRptMcSh
+      M3svD9qk9CR0cMlE3+c5mjDwZs3s+SU7Jxlaa60g1GzXB4Bdughgmqauw+M4xuy11rrv9bwe
+      V31vmqaue9tci4sAet8J2ftnen9ge56v915v25zNLRDRBEA0ARBNAEQTANEEQDQBEE0ARBMA
+      0QRANAEQTQBEEwDRBEA0ARBNAEQTANEEQDQBEE0ARBMA0QRAtMX5g/WjR3X27d1uw621GobB
+      3hXYa88GX3lvtr9fT44Oa7NZXzZY1ev1nv8Xk15zW7zWFwE8OK4/vv6mzwn4T1veOqj7X31Z
+      f52d7foo/zq3QEQTANEEQDQBEE0ARBMA0QRANAEQTQBEEwDRBEA0ARBNAEQTANEEQDQBEE0A
+      RBMA0QRANAEQTQBEEwDRBEA0ARBNAEQTANEEQDQBEE0ARBMA0QRANAEQTQBEEwDRBEA0ARBN
+      AEQTANEEQDQBEE0ARBMA0QRANAEQTQBEEwDRBEA0ARBNAEQTANEEQDQBEE0ARBMA0QRANAEQ
+      TQBEEwDRBEA0ARBNAEQTANEEQDQBEE0ARBMA0QRAtMWuD3BVLO98XMPTJzVt9mpxY1ar73/Y
+      9ZHo5NefjuvBL6f1zvVZPfztpO58+kXd3F9Wld8AzwyLan+e1OLww6ppVcPb79aw8Nb8X6w2
+      83pt83udDvv15t5eLfde/Nx3lauq2qbG003Nrs1qPHlc8zde3/WJ6Oi9mzfq59W1+uSjg3q8
+      Wtdby+HiOQFUVQ3zWh6+X+vj41ocHNbm4Y/VxmnXp6KT+/fu1Wwxr7PVqg5uHb30nL8Bqqra
+      WE+/u3vx5XqHR6G/2599XrefP/7g6PpLz/kNQDQBEE0ARBMA0QRANAEQTQBEEwDRBEA0ARBN
+      AEQTANEEQDQBEE0ARBMA0QRANAEQTQBEEwDRBEA0ARBNAEQTANEEQDQBEE0ARBMA0QRANAEQ
+      TQBEEwDRBEA0ARBNAEQTANEEQDQBEE0ARBMA0QRANAEQTQBEEwDRBEA0ARBNAEQTANEEQDQB
+      EE0ARBMA0QRANAEQTQBEEwDRBEA0ARBNAEQTANEEQDQBEE0ARBMA0QRANAEQTQBEEwDRBEC0
+      obXWqqo2m03NZ/16mMaxZvN5zt401azn+9dxr7VWrbXt9oah794lnn8Ea7jke25jHMeav+K1
+      XZw/GIahho4XsE1TzF5rrVrV1d2bpqqee50/sL33ttlyC0Q0ARBNAEQTANEEQDQBEE0ARBMA
+      0QRANAEQTQBEEwDRBEA0ARBNAEQTANEEQDQBEE0ARBMA0QRAtL8Boqv9YCnSb1oAAAAASUVO
+      RK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Type of Pitches &amp; Velocity' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
