@@ -17,4 +17,4 @@
 
 
 ### 3. TWBX 커뮤니티 3기 활동 (2021.10.15 ~ 2021.11.12)
-(참고 링크 : https://blog.naver.com/bigxdata)
+(참고 링크 : https://blog.naver.com/bigxdata, Tableau Public 프로필 : https://public.tableau.com/app/profile/choi.su.jin)
