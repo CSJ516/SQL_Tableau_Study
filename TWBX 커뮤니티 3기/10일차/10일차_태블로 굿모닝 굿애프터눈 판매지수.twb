@@ -102,6 +102,17 @@
       <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
       <style>
         <style-rule element='mark'>
+          <encoding attr='color' field='[yr:날짜:ok]' type='palette'>
+            <map to='#bab0ac'>
+              <bucket>2019</bucket>
+            </map>
+            <map to='#eb7412'>
+              <bucket>2021</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>2020</bucket>
+            </map>
+          </encoding>
           <encoding attr='color' field='[:Measure Names]' type='palette'>
             <map to='#7a7a7a'>
               <bucket>&quot;[federated.1nku6pf1hoh6lz1dw5b8s02cqyc5].[usr:Calculation_930274832193593344:qk]&quot;</bucket>
@@ -134,17 +145,6 @@
             </map>
             <map to='#ffffff'>
               <bucket>&quot;Etc&quot;</bucket>
-            </map>
-          </encoding>
-          <encoding attr='color' field='[yr:날짜:ok]' type='palette'>
-            <map to='#bab0ac'>
-              <bucket>2019</bucket>
-            </map>
-            <map to='#eb7412'>
-              <bucket>2021</bucket>
-            </map>
-            <map to='#edc948'>
-              <bucket>2020</bucket>
             </map>
           </encoding>
         </style-rule>
@@ -371,6 +371,13 @@
             </view>
             <mark class='Line' />
             <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <customized-tooltip>
+              <formatted-text>
+                <run bold='true'><![CDATA[<[federated.1nku6pf1hoh6lz1dw5b8s02cqyc5].[tdy:날짜:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true'><![CDATA[<[federated.1nku6pf1hoh6lz1dw5b8s02cqyc5].[usr:Calculation_930274832193593344:qk]> points]]></run>
+              </formatted-text>
+            </customized-tooltip>
             <style>
               <style-rule element='mark'>
                 <format attr='size' value='0.18591159582138062' />
@@ -387,6 +394,13 @@
             <encodings>
               <color column='[federated.1nku6pf1hoh6lz1dw5b8s02cqyc5].[:Measure Names]' />
             </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run bold='true'><![CDATA[<[federated.1nku6pf1hoh6lz1dw5b8s02cqyc5].[tdy:날짜:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true'><![CDATA[<[federated.1nku6pf1hoh6lz1dw5b8s02cqyc5].[usr:Calculation_930274832193593344:qk]> points]]></run>
+              </formatted-text>
+            </customized-tooltip>
             <style>
               <style-rule element='mark'>
                 <format attr='size' value='0.18591159582138062' />
@@ -409,6 +423,13 @@
                 <column>[federated.1nku6pf1hoh6lz1dw5b8s02cqyc5].[usr:Calculation_930274832197120001:nk]</column>
               </excluded-factors>
             </trendline>
+            <customized-tooltip>
+              <formatted-text>
+                <run bold='true'><![CDATA[<[federated.1nku6pf1hoh6lz1dw5b8s02cqyc5].[tdy:날짜:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true'><![CDATA[<[federated.1nku6pf1hoh6lz1dw5b8s02cqyc5].[usr:Calculation_930274832193593344:qk]> points]]></run>
+              </formatted-text>
+            </customized-tooltip>
             <style>
               <style-rule element='cell'>
                 <format attr='vertical-align' value='top' />
@@ -626,8 +647,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='850' minheight='850' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='45' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='98000' id='44' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='100000' id='47' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='46' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
                 <zone forceUpdate='true' h='29375' id='16' type-v2='text' w='30400' x='33500' y='1000'>
                   <formatted-text>
                     <run fontalignment='1' fontname='나눔고딕 ExtraBold'>Æ       </run>
